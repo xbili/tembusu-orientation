@@ -25,7 +25,7 @@ $ sudo npm install -g gulp
 
 ### Install other dependencies
 
-Run from tembusu-orientation-2015 folder
+Run from `tembusu-orientation-2015` folder
 ```sh
 $ npm install
 ```
@@ -35,7 +35,7 @@ $ npm install
 $ gulp serve
 ```
 
-More information about the gulp commands can be found in the [Web Starter Kit README](https://github.com/xbili/tembusu-orientation-2015/docs/README-Web-Starter-Kit.md) and [commands.md](https://github.com/xbili/tembusu-orientation-2015/docs/commands.md).
+More information about the gulp commands can be found in the [Web Starter Kit README](https://github.com/xbili/tembusu-orientation-2015/blob/master/docs/README-Web-Starter-Kit.md) and [commands.md](https://github.com/xbili/tembusu-orientation-2015/blob/master/docs/commands.md).
 
 ## Coding Style Guide
 
@@ -44,7 +44,7 @@ To maintain the quality of code written, please follow these two style guides:
 1. [Primer HTML/CSS Style Guide](http://primercss.io/guidelines/#css)
 2. [Airbnb Javascript Style Guide](https://github.com/airbnb/javascript/tree/master/es5)
 
-Please use only ES5 JavaScript, and set your editor to **FOUR SPACES, no hard tabs**. 
+Please use only ES5 JavaScript, and set your editor to **FOUR SPACES, no hard tabs**. (This is the only difference from the style guides)
 
 ## Git Workflow
 
@@ -65,6 +65,6 @@ To fix issues opened in GitHub, name it as `issue/Issue<issue number here>-<issu
 
 ---
 
-Feel free to drop me an [email](xubili93@gmail.com) if there are any other questions.
+Feel free to drop me an [email](mailto:xubili93@gmail.com) if there are any other questions.
 
 Enjoy!
