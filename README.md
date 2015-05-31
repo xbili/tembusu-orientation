@@ -44,7 +44,7 @@ To maintain the quality of code written, please follow these two style guides:
 1. [Primer HTML/CSS Style Guide](http://primercss.io/guidelines/#css)
 2. [Airbnb Javascript Style Guide](https://github.com/airbnb/javascript/tree/master/es5)
 
-Please use only ES5 JavaScript, and set your editor to **FOUR SPACES, no hard tabs**. (This is the only difference from the style guides)
+Please use only ES5 JavaScript, and set your editor to **TWO SPACES, no hard tabs**.
 
 ## Git Workflow
 
