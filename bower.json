@@ -1,0 +1,17 @@
+{
+  "name": "tembusu-orientation",
+  "authors": [
+    "Bili Xu <xubili93@gmail.com>"
+  ],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "~3.3.4"
+  }
+}
