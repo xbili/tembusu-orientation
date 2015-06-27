@@ -6,7 +6,8 @@ angular.module( 'ngVn', [
   'ui.router'
 ])
 
-.config( function myAppConfig ( $stateProvider, $urlRouterProvider ) {
+.config( function myAppConfig ( $stateProvider, $urlRouterProvider) {
+  
   $urlRouterProvider.otherwise( '/home' );
 })
 
