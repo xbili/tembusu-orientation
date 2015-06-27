@@ -1,4 +1,4 @@
-angular.module('templates-app', ['about/about.tpl.html', 'home/home.tpl.html']);
+angular.module('templates-app', ['about/about.tpl.html', 'updates/updates.tpl.html']);
 
 angular.module("about/about.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("about/about.tpl.html",
@@ -270,8 +270,8 @@ angular.module("about/about.tpl.html", []).run(["$templateCache", function($temp
     "");
 }]);
 
-angular.module("home/home.tpl.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("home/home.tpl.html",
+angular.module("updates/updates.tpl.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("updates/updates.tpl.html",
     "<div class=\"jumbotron\">\n" +
     "  <h1>Non-Trivial AngularJS Made Easy</h1>\n" +
     "\n" +
