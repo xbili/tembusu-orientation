@@ -37,4 +37,7 @@ angular.module( 'ngVn', [
       $scope.pageTitle = toState.data.pageTitle + ' | ngVn' ;
     }
   });
-});
+})
+
+;
+
