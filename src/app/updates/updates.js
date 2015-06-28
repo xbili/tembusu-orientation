@@ -12,7 +12,7 @@
  * The dependencies block here is also where component dependencies should be
  * specified, as shown below.
  */
-angular.module( 'ngVn.home', [
+angular.module( 'ngVn.updates', [
   'ui.router',
   'plusOne'
 ])
@@ -42,4 +42,3 @@ angular.module( 'ngVn.home', [
 })
 
 ;
-
