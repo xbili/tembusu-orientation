@@ -23,22 +23,15 @@ angular.module( 'ngVn.updates', [
  * this way makes each module more "self-contained".
  */
 .config(function config( $stateProvider ) {
-  $stateProvider.state( 'updates', {
-    url: '/updates',
-    views: {
-      "main": {
-        controller: 'UpdatesCtrl',
-        templateUrl: 'updates/updates.tpl.html'
-      }
-    },
-    data:{ pageTitle: 'updates' }
-  });
+    // Only include sub routes in here
 })
 
 /**
  * And of course we define a controller for our route.
  */
 .controller( 'UpdatesCtrl', function UpdatesController( $scope ) {
+
 })
 
 ;
+

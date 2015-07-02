@@ -8,23 +8,23 @@ angular.module( 'ngVn', [
 ])
 
 .config( function myAppConfig ( $stateProvider, $urlRouterProvider) {
-  $urlRouterProvider.otherwise('/home');
+  // $urlRouterProvider.otherwise('/home');
 
   $stateProvider
     .state('home',
         {
             url: '/home',
-            templateUrl: '/app/home/home.tpl.html'
+            templateUrl: '../src/app/home/home.tpl.html'
         })
     .state('updates',
         {
             url: '/updates',
-            templateUrl: '/app/updates/updates.tpl.html'
+            templateUrl: '../src/app/updates/updates.tpl.html'
         })
     .state('about',
         {
             url: '/about',
-            templateUrl: '/app/about/about.tpl.html'
+            templateUrl: '../src/app/about/about.tpl.html'
         });
 })
 
@@ -40,4 +40,3 @@ angular.module( 'ngVn', [
 })
 
 ;
-
