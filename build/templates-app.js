@@ -272,6 +272,14 @@ angular.module("about/about.tpl.html", []).run(["$templateCache", function($temp
 
 angular.module("home/home.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("home/home.tpl.html",
+    "<div id=\"headSection\">\n" +
+    "  <div class=\"container-fluid\">\n" +
+    "      <div class=\"row\">\n" +
+    "          Tembusu\n" +
+    "      </div>\n" +
+    "  </div>\n" +
+    "</div>\n" +
+    "\n" +
     "<div class=\"jumbotron\">\n" +
     "  <h1>Non-Trivial AngularJS Made Easy</h1>\n" +
     "\n" +
