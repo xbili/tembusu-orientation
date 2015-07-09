@@ -15,19 +15,22 @@ angular.module( 'ngVn', [
         {
             url: '/home',
             controller: 'HomeCtrl',
-            templateUrl: 'home/home.tpl.html'
+            templateUrl: 'home/home.tpl.html',
+            data: { pageTitle: 'Home' }
         })
     .state('updates',
         {
             url: '/updates',
             controller: 'UpdatesCtrl',
-            templateUrl: 'updates/updates.tpl.html'
+            templateUrl: 'updates/updates.tpl.html',
+            data: { pageTitle: 'Latest Updates' }
         })
     .state('about',
         {
             url: '/about',
             controller: 'AboutCtrl',
-            templateUrl: 'about/about.tpl.html'
+            templateUrl: 'about/about.tpl.html',
+            data: { pageTitle: 'About' }
         });
 })
 
@@ -35,7 +38,7 @@ angular.module( 'ngVn', [
   $scope.$on('$stateChangeSuccess',
              function(event, toState, toParams, fromState, fromParams) {
     if ( angular.isDefined( toState.data.pageTitle ) ) {
-      $scope.pageTitle = toState.data.pageTitle + ' | ngVn' ;
+      $scope.pageTitle = toState.data.pageTitle + ' | Tembusu Orientation Week' ;
     }
   });
 })
