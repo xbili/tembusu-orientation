@@ -7,7 +7,8 @@ angular.module( 'ngVn', [
   'ui.router'
 ])
 
-.config( function($stateProvider, $urlRouterProvider) {
+.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider, $stateProvider){
+
   $urlRouterProvider.otherwise('/home');
 
   $stateProvider
@@ -32,7 +33,7 @@ angular.module( 'ngVn', [
             templateUrl: 'about/about.tpl.html',
             data: { pageTitle: 'About' }
         });
-})
+}])
 
 .controller( 'AppCtrl', function AppCtrl ( $scope, $location ) {
   $scope.$on('$stateChangeSuccess',
