@@ -1,14 +1,14 @@
 @import url(http://fonts.googleapis.com/css?family=UnifrakturMaguntia);
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,900);
 /**
- * This is the main application stylesheet. It should include or import all
- * stylesheets used throughout the application as this is the only stylesheet in
- * the Grunt configuration that is automatically processed.
- */
+* This is the main application stylesheet. It should include or import all
+* stylesheets used throughout the application as this is the only stylesheet in
+* the Grunt configuration that is automatically processed.
+*/
 /**
- * First, we include the Twitter Bootstrap LESS files. Only the ones used in the
- * project should be imported as the rest are just wasting space.
- */
+* First, we include the Twitter Bootstrap LESS files. Only the ones used in the
+* project should be imported as the rest are just wasting space.
+*/
 /*! normalize.css v3.0.0 | MIT License | git.io/normalize */
 html {
   font-family: sans-serif;
@@ -5784,9 +5784,9 @@ button.close {
   }
 }
 /**
- * This is our main variables file. We must include it last so we can overwrite any variable
- * definitions in our imported stylesheets.
- */
+* This is our main variables file. We must include it last so we can overwrite any variable
+* definitions in our imported stylesheets.
+*/
 /**
  * These are the variables used throughout the application. This is where
  * overwrites that are not specific to components should be maintained.
@@ -5795,8 +5795,8 @@ button.close {
  * Typography-related.
  */
 /**
- * Typography
- */
+* Typography
+*/
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
@@ -5830,8 +5830,8 @@ h2 {
   color: #666;
 }
 /**
- * Navigation
- */
+* Navigation
+*/
 .navbar {
   margin-top: 20px;
 }
@@ -5839,8 +5839,8 @@ h2 {
   font-size: 60%;
 }
 /**
- * Footer
- */
+* Footer
+*/
 .footer {
   margin-top: 80px;
 }
@@ -5870,11 +5870,11 @@ h2 {
   color: #555555;
 }
 /**
- * Now that all app-wide styles have been applied, we can load the styles for
- * all the submodules and components we are using.
- *
- * TODO: In a later version of this boilerplate, I'd like to automate this.
- */
+* Now that all app-wide styles have been applied, we can load the styles for
+* all the submodules and components we are using.
+*
+* TODO: In a later version of this boilerplate, I'd like to automate this.
+*/
 .ion,
 .ionicons {
   display: inline-block;
@@ -14388,9 +14388,13 @@ h2 {
   font-size: 28px;
   line-height: 1;
 }
+img {
+  background-color: rgba(255, 0, 0, 0.5);
+}
+/* ----------- Non-Retina Screens ----------- */
 #headSection {
   position: fixed;
-  background: transparent url(img/landing.jpg) no-repeat center top;
+  background-color: #212121;
   display: flex;
   justify-content: center;
   /* align horizontal */
@@ -14420,35 +14424,10 @@ h2 {
   font-size: 60px;
   color: #654321;
 }
-.jumbotron {
-  margin: 40px 0 80px 0;
-  text-align: center;
-}
-.jumbotron h1 {
-  margin-bottom: 20px;
-  font-size: 55px;
-  line-height: 1;
-}
-.jumbotron .lead {
-  font-size: 24px;
-  line-height: 1.25;
-}
-.jumbotron .btn {
-  font-size: 21px;
-  padding: 14px 24px;
-}
-.marketing .row {
-  margin-bottom: 10px;
-}
-.marketing .row:last-child {
-  margin-bottom: 0;
-}
-.marketing h4 [class*=" icon-"],
-.marketing h4 [class^="icon-"] {
-  margin-right: 5px;
-  vertical-align: -10%;
-  font-size: 28px;
-  line-height: 1;
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+  #headSection {
+    max-height: 5px;
+  }
 }
 * {
   margin: 0;
@@ -14611,10 +14590,10 @@ a:focus {
   margin: 25px 2px;
 }
 .menu a:hover {
-  color: #ffffff;
+  color: #212121;
 }
 .menu a:active {
-  color: #ffffff;
+  color: #212121;
 }
 .menu.menu-open {
   right: 0px;
@@ -14672,14 +14651,15 @@ a:focus {
   transition: all .3s ease;
 }
 #menuToggle {
-  position: absolute;
-  top: 20px;
-  left: 0;
-  z-index: 11;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  width: 100%;
+  z-index: 100;
   display: block;
   text-align: center;
-  font-size: 20px;
-  color: #654321;
+  font-size: 30px;
+  color: #e3e3e3;
   width: 40px;
   height: 40px;
   line-height: 40px;
@@ -14692,7 +14672,7 @@ a:focus {
   transition: all 0.1s ease-in-out;
 }
 #menuToggle:hover {
-  color: #ffffff;
+  color: #212121;
   background: rgba(0, 0, 0, 0.2);
   -webkit-transition: all 0.1s ease-in-out;
   -moz-transition: all 0.1s ease-in-out;
@@ -14714,4 +14694,117 @@ hr {
   color: #5a5a5a;
   background-color: transparent;
   border-color: #ddd;
+}
+#body-nav {
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  /*left: 58px;*/
+  background: transparent;
+  text-align: left;
+  display: block;
+  -o-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transition: background 500ms ease;
+  -moz-transition: background 500ms ease;
+  transition: background 500ms ease;
+  z-index: 999999999;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  z-index: 0;
+  -moz-box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+.show-nav #body-nav {
+  background: #0e1832;
+  background: rgba(14, 24, 50, 0.95);
+  z-index: 1;
+}
+.hide-nav #body-nav {
+  background: transparent;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+#body-nav ul {
+  position: absolute;
+  left: 0%;
+  width: 100%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateY(-50%);
+}
+#body-nav ul li a {
+  display: block;
+  text-decoration: none !important;
+  height: 100px;
+  line-height: 100px;
+  font-size: 50px;
+  color: #fff;
+  opacity: 0;
+  border: none;
+  -webkit-transition: all 400ms cubic-bezier(0.17, 0.67, 0.38, 1.46);
+  -moz-transition: all 400ms cubic-bezier(0.17, 0.67, 0.38, 1.46);
+  transition: all 400ms cubic-bezier(0.17, 0.67, 0.38, 1.46);
+  -webkit-transform: scale(0.3);
+  -moz-transform: scale(0.3);
+  -ms-transform: scale(0.3);
+  -o-transform: scale(0.3);
+  transform: scale(0.3);
+}
+.show-nav #body-nav ul li a {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
+#body-nav ul li:nth-child(1) a {
+  -webkit-transition-delay: 0;
+  -moz-transition-delay: 0;
+  -o-transition-delay: 0;
+  transition-delay: 0;
+}
+#body-nav ul li:nth-child(2) a {
+  -webkit-transition-delay: 0.025s;
+  -moz-transition-delay: 0.025s;
+  -o-transition-delay: 0.025s;
+  transition-delay: 0.025s;
+}
+#body-nav ul li:nth-child(3) a {
+  -webkit-transition-delay: 0.050s;
+  -moz-transition-delay: 0.050s;
+  -o-transition-delay: 0.050s;
+  transition-delay: 0.050s;
+}
+#body-nav ul li:nth-child(4) a {
+  -webkit-transition-delay: 0.075s;
+  -moz-transition-delay: 0.075s;
+  -o-transition-delay: 0.075s;
+  transition-delay: 0.075s;
+}
+.toggle-nav {
+  left: auto;
+  right: 30px;
+  position: fixed;
+  z-index: 9999999999999;
+}
+.toggle-nav .option {
+  left: auto;
+  right: 125%;
 }

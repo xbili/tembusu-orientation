@@ -1,28 +1,28 @@
 /**
- * This is the main application stylesheet. It should include or import all
- * stylesheets used throughout the application as this is the only stylesheet in
- * the Grunt configuration that is automatically processed.
- */
+* This is the main application stylesheet. It should include or import all
+* stylesheets used throughout the application as this is the only stylesheet in
+* the Grunt configuration that is automatically processed.
+*/
 
 
 /**
- * First, we include the Twitter Bootstrap LESS files. Only the ones used in the
- * project should be imported as the rest are just wasting space.
- */
+* First, we include the Twitter Bootstrap LESS files. Only the ones used in the
+* project should be imported as the rest are just wasting space.
+*/
 @import '../../vendor/bootstrap/less/bootstrap.less';
 
 
 /**
- * This is our main variables file. We must include it last so we can overwrite any variable
- * definitions in our imported stylesheets.
- */
+* This is our main variables file. We must include it last so we can overwrite any variable
+* definitions in our imported stylesheets.
+*/
 
 @import 'variables.less';
 
 
 /**
- * Typography
- */
+* Typography
+*/
 
 
 @font-face {
@@ -64,8 +64,8 @@ h2 {
 
 
 /**
- * Navigation
- */
+* Navigation
+*/
 
 .navbar {
   margin-top: 20px;
@@ -77,8 +77,8 @@ h2 {
 
 
 /**
- * Footer
- */
+* Footer
+*/
 
 .footer {
   margin-top: 80px;
@@ -111,15 +111,16 @@ h2 {
   }
 }
 
-
 /**
- * Now that all app-wide styles have been applied, we can load the styles for
- * all the submodules and components we are using.
- *
- * TODO: In a later version of this boilerplate, I'd like to automate this.
- */
+* Now that all app-wide styles have been applied, we can load the styles for
+* all the submodules and components we are using.
+*
+* TODO: In a later version of this boilerplate, I'd like to automate this.
+*/
 @import '../common/ionicons.min.less';
 @import '../app/updates/updates.less';
 @import '../app/home/home.less';
 @import '../common/style.less';
+@import '../common/nav.less';
+
 // @import '../common/icons.less';

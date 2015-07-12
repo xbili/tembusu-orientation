@@ -17,17 +17,34 @@
 
 </head>
 <body>
-  <nav class="menu" id="theMenu" role="navigation">
-    <div class="menu-wrap">
-      <h1 class="logo view"><a href="index.html#/home">Tembusu</a></h1>
-      <i class="ion-android-close menu-close"></i>
-      <a ui-sref="home" class="view">home</a>
-      <a ui-sref="about" class="view">about</a>
-    </div>
 
-    <!-- Menu button -->
-    <div id="menuToggle"><i class="fa fa-circle-o-notch"></i></div>
+  <nav id="body-nav">
+      <ul>
+          <li><a class="view" ui-sref="home">home</a></li>
+          <li><a class="view" ui-sref="about">about</a></li>
+          <li><a class="view" ui-sref="about">news</a></li>
+          <li><a class="view" ui-sref="groups">groups</a></li>
+        </ul>
   </nav>
+
+  <div id="menuToggle"><i class="fa fa-circle-o-notch"></i></div>
+
+<!--
+      <nav class="menu" id="theMenu" role="navigation">
+        <div class="menu-wrap">
+          <h1 class="logo view"><a href="index.html#/home">Tembusu</a></h1>
+          <i class="ion-android-close menu-close"></i>
+          <a ui-sref="home" class="view">home</a>
+          <a ui-sref="about" class="view">about</a>
+        </div>
+
+
+      </nav> -->
+
+      <div ui-view></div>
+
+
+
   <!--
   <nav class="navbar navbar-inverse" role="navigation">
     <div class="navbar-header">
@@ -40,7 +57,7 @@
   </nav>
 -->
 
-    <div ui-view></div>
+
 
 
   <script src="assets/js/jquery.min.js"></script>

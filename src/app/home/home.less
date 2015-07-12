@@ -5,12 +5,16 @@
 //   margin-right: auto;
 //   margin-left: auto;
 // }
+img{
+  background-color:rgba(255,0,0,0.5);
+}
 
+/* ----------- Non-Retina Screens ----------- */
 
 #headSection {
   position: fixed;
-  background: transparent url(img/landing.jpg) no-repeat center top;
-  background-size:cover;
+  background-color: #212121;
+  // background-size:cover;
   display: flex;
   justify-content: center; /* align horizontal */
   align-items: center; /* align vertical */
@@ -41,40 +45,10 @@
   }
 }
 
-.jumbotron {
-  margin: 40px 0 80px 0;
-  text-align: center;
-
-  h1 {
-    margin-bottom: 20px;
-    font-size: 55px;
-    line-height: 1;
-  }
-
-  .lead {
-    font-size: 24px;
-    line-height: 1.25;
-  }
-
-  .btn {
-    font-size: 21px;
-    padding: 14px 24px;
-  }
-}
-
-.marketing {
-  .row {
-    margin-bottom: 10px;
-  }
-
-  .row:last-child {
-    margin-bottom: 0;
-  }
-
-  h4 [class*=" icon-"], h4 [class^="icon-"] {
-    margin-right: 5px;
-    vertical-align: -10%;
-    font-size: 28px;
-    line-height: 1;
+@media screen
+  and (min-device-width: 1200px)
+  and (max-device-width: 1600px) {
+  #headSection{
+    max-height: 5px
   }
 }
