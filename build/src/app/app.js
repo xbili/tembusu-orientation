@@ -7,14 +7,23 @@ angular.module( 'ngVn', [
   'ui.router'
 ])
 
-.config( function myAppConfig ( $stateProvider, $urlRouterProvider) {
-  // $urlRouterProvider.otherwise('/home');
+.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider, $stateProvider){
+
+  $urlRouterProvider.otherwise('/home');
 
   $stateProvider
     .state('home',
         {
             url: '/home',
-            templateUrl: '../src/app/home/home.tpl.html'
+            templateUrl: '../src/app/home/home.tpl.html',
+            controller: 'homeCtrl'
+            // resolve: {
+            //   timeline: ['$http', function($http){
+            //     return $http.get('api/timeline.json').then(function(response){
+          //         return response.data;
+        //  })  JSON URL
+            //   }]
+            // }
         })
     .state('updates',
         {
@@ -26,8 +35,7 @@ angular.module( 'ngVn', [
             url: '/about',
             templateUrl: '../src/app/about/about.tpl.html'
         });
-})
-
+}])
 .run( function run () {
 })
 
