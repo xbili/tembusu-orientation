@@ -1,4 +1,4 @@
-angular.module('templates-app', ['about/about.tpl.html', 'home/home.tpl.html', 'updates/updates.tpl.html']);
+angular.module('templates-app', ['about/about.tpl.html', 'home/home.tpl.html', 'og/og.tpl.html', 'updates/updates.tpl.html']);
 
 angular.module("about/about.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("about/about.tpl.html",
@@ -278,6 +278,15 @@ angular.module("home/home.tpl.html", []).run(["$templateCache", function($templa
     "            <img id=\"landingLogo\" class=\"img-responsive\" src=\"../src/assets/img/logo.jpg\" alt=\"\" />\n" +
     "    </div>\n" +
     "  </div>\n" +
+    "</div>\n" +
+    "");
+}]);
+
+angular.module("og/og.tpl.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("og/og.tpl.html",
+    "<div class=\"\">\n" +
+    "  texts\n" +
+    "  lols\n" +
     "</div>\n" +
     "");
 }]);

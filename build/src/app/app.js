@@ -2,6 +2,7 @@ angular.module( 'ngVn', [
   'templates-app',
   'templates-common',
   'ngVn.home',
+  'ngVn.og',
   'ngVn.about',
   'ngVn.updates',
   'ui.router'
@@ -17,14 +18,20 @@ angular.module( 'ngVn', [
             url: '/home',
             templateUrl: '../src/app/home/home.tpl.html',
             controller: 'homeCtrl'
-            // resolve: {
-            //   timeline: ['$http', function($http){
-            //     return $http.get('api/timeline.json').then(function(response){
-          //         return response.data;
-        //  })  JSON URL
-            //   }]
-            // }
-        })
+
+        }).state('og',
+            {
+                url: '/og',
+                templateUrl: '../src/app/og/og.tpl.html',
+                controller: 'ogCtrl'
+                // resolve: {
+                //   timeline: ['$http', function($http){
+                //     return $http.get('api/timeline.json').then(function(response){
+              //         return response.data;
+            //  })  JSON URL
+                //   }]
+                // }
+            })
     .state('updates',
         {
             url: '/updates',
