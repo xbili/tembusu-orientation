@@ -1,70 +1,55 @@
 <!DOCTYPE html>
 <html ng-app="ngVn" ng-controller="AppCtrl">
 <head>
-  <title ng-bind="pageTitle">Angular</title>
+  <title ng-bind="pageTitle">Tembusu</title>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1, user-scalable=no"">
 
   <!-- font awesome from BootstrapCDN -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
   <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
 
   <!-- compiled CSS --><% styles.forEach( function ( file ) { %>
-  <link rel="stylesheet" type="text/css" href="<%= file %>" /><% }); %>
+    <link rel="stylesheet" type="text/css" href="<%= file %>" /><% }); %>
 
-  <!-- compiled JavaScript --><% scripts.forEach( function ( file ) { %>
-  <script type="text/javascript" src="<%= file %>"></script><% }); %>
+    <!-- compiled JavaScript --><% scripts.forEach( function ( file ) { %>
+    <script type="text/javascript" src="<%= file %>"></script><% }); %>
 
-</head>
-<body>
-
-  <nav id="body-nav">
-      <ul>
+  </head>
+  <body>
+    <div class="vn-navbar">
+      <nav id="body-nav">
+        <ul>
           <li><a class="view" ui-sref="home">home</a></li>
           <li><a class="view" ui-sref="about">about</a></li>
           <li><a class="view" ui-sref="updates">news</a></li>
           <li><a class="view" ui-sref="og">groups</a></li>
         </ul>
-  </nav>
+      </nav>
 
-  <div id="menuToggle"><i class="fa fa-circle-o-notch"></i></div>
+      <!-- Menu Button -->
+      <div id="menuToggle"><i class="fa fa-circle-o-notch"></i></div>
 
-<!--
-      <nav class="menu" id="theMenu" role="navigation">
-        <div class="menu-wrap">
-          <h1 class="logo view"><a href="index.html#/home">Tembusu</a></h1>
-          <i class="ion-android-close menu-close"></i>
-          <a ui-sref="home" class="view">home</a>
-          <a ui-sref="about" class="view">about</a>
-        </div>
+    </div>
+    <!--
+    <nav class="menu" id="theMenu" role="navigation">
+    <div class="menu-wrap">
+    <h1 class="logo view"><a href="index.html#/home">Tembusu</a></h1>
+    <i class="ion-android-close menu-close"></i>
+    <a ui-sref="home" class="view">home</a>
+    <a ui-sref="about" class="view">about</a>
+    </div>
 
 
-      </nav> -->
+    </nav> -->
 
     <div ui-view></div>
 
 
-
-  <!--
-  <nav class="navbar navbar-inverse" role="navigation">
-    <div class="navbar-header">
-      <a class="navbar-brand" ui-sref="#">AngularUI Router</a>
-    </div>
-    <ul class="nav navbar-nav">
-      <li><a ui-sref="home">Home</a></li>
-      <li><a ui-sref="about">About</a></li>
-    </ul>
-  </nav>
--->
-
-
-
-
-  <script src="assets/js/jquery.min.js"></script>
-  <script src="assets/js/bootstrap.min.js"></script>
-  <script src="assets/js/classie.js"></script>
-  <script src="assets/js/smoothscroll.js"></script>
-  <script src="assets/js/main.js"></script>
-  <!-- <script src="assets/js/retina-1.1.0.js"></script> -->
-</body>
-</html>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/classie.js"></script>
+    <script src="assets/js/smoothscroll.js"></script>
+    <script src="assets/js/navbar.js"></script>
+  </body>
+  </html>

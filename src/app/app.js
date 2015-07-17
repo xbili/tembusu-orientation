@@ -13,45 +13,47 @@ angular.module( 'ngVn', [
   $urlRouterProvider.otherwise('/home');
 
   $stateProvider
-    .state('home',
-        {
-            url: '/home',
-            templateUrl: '../src/app/home/home.tpl.html',
-            controller: 'homeCtrl'
-
-        }).state('og',
-            {
-                url: '/og',
-                templateUrl: '../src/app/og/og.tpl.html',
-                controller: 'ogCtrl'
-                // resolve: {
-                //   timeline: ['$http', function($http){
-                //     return $http.get('api/timeline.json').then(function(response){
-              //         return response.data;
-            //  })  JSON URL
-                //   }]
-                // }
-            })
-    .state('updates',
-        {
-            url: '/updates',
-            templateUrl: '../src/app/updates/updates.tpl.html'
-        })
-    .state('about',
-        {
-            url: '/about',
-            templateUrl: '../src/app/about/about.tpl.html'
-        });
+  .state('home',
+  {
+    url: '/home',
+    controller: 'HomeCtrl',
+    templateUrl: 'home/home.tpl.html',
+    data: { pageTitle: 'Home' }
+  })
+  .state('updates',
+  {
+    url: '/updates',
+    controller: 'UpdatesCtrl',
+    templateUrl: 'updates/updates.tpl.html',
+    data: { pageTitle: 'Latest Updates' }
+  })
+  .state('about',
+  {
+    url: '/about',
+    controller: 'AboutCtrl',
+    templateUrl: 'about/about.tpl.html',
+    data: { pageTitle: 'About' }
+  }).state('og',
+  {
+    url: '/og',
+    controller: 'OGCtrl',
+    templateUrl: 'og/og.tpl.html',
+    data: { pageTitle: 'Orientation Groups' }
+    // resolve: {
+    //   timeline: ['$http', function($http){
+    //     return $http.get('api/timeline.json').then(function(response){
+    //         return response.data;
+    //  })  JSON URL
+    //   }]
+    // }
+  });
 }])
-.run( function run () {
-})
 
 .controller( 'AppCtrl', function AppCtrl ( $scope, $location ) {
-  $scope.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams){
+  $scope.$on('$stateChangeSuccess',
+  function(event, toState, toParams, fromState, fromParams) {
     if ( angular.isDefined( toState.data.pageTitle ) ) {
-      $scope.pageTitle = toState.data.pageTitle + ' | ngVn' ;
+      $scope.pageTitle = toState.data.pageTitle + ' | Tembusu Orientation Week' ;
     }
   });
-})
-
-;
+});

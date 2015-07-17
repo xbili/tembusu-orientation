@@ -29,6 +29,6 @@ angular.module( 'ngVn.home', [
 /**
  * And of course we define a controller for our route.
  */
-.controller( 'homeCtrl', function homeController( $scope ) {
+.controller( 'HomeCtrl', function HomeController( $scope ) {
 
 });

@@ -29,7 +29,7 @@ angular.module( 'ngVn.og', [
 /**
  * And of course we define a controller for our route.
  */
-.controller( 'ogCtrl', function ogController( $scope ) {
+.controller( 'OGCtrl', function OGController( $scope ) {
   imgPrefixPath = "assets/img/ogLogos/";
   imgFormat = ".jpg";
 
