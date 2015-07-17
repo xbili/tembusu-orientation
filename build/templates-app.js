@@ -284,10 +284,25 @@ angular.module("home/home.tpl.html", []).run(["$templateCache", function($templa
 
 angular.module("og/og.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("og/og.tpl.html",
-    "<div class=\"\">\n" +
-    "  texts\n" +
-    "  lols\n" +
+    "<!-- {{ogLogoCollection}} -->\n" +
+    "<div id=\"bg\" class=\"container-fluid\">\n" +
+    "  <div class=\"row\">\n" +
+    "    <div id=\"imgBox\" class=\"darken col-md-3\" ng-repeat=\"ogLogo in ogLogoCollection\">\n" +
+    "      <img class=\"img-responsive\" ng-src=\"{{ogLogo}}\" />\n" +
+    "    </div>\n" +
+    "  </div>\n" +
     "</div>\n" +
+    "\n" +
+    "<!-- <div class=\"flip-container\" ontouchstart=\"this.classList.toggle('hover');\">\n" +
+    "	<div class=\"flipper\">\n" +
+    "		<div class=\"front\">\n" +
+    "	 front content\n" +
+    "		</div>\n" +
+    "		<div class=\"back\">\n" +
+    "		back content\n" +
+    "		</div>\n" +
+    "	</div>\n" +
+    "</div> -->\n" +
     "");
 }]);
 

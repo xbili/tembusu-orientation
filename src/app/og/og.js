@@ -30,5 +30,30 @@ angular.module( 'ngVn.og', [
  * And of course we define a controller for our route.
  */
 .controller( 'ogCtrl', function ogController( $scope ) {
+  imgPrefixPath = "assets/img/ogLogos/";
+  imgFormat = ".jpg";
+
+  imgCollection = [
+    "basilisk",
+    "centaur",
+    "dragon",
+    "dwarf",
+    "elf",
+    "giant",
+    "goblin",
+    "hippogriff",
+    "lycanthrope",
+    "merfolk",
+    "phoenix",
+    "pixie",
+    "troll",
+    "unicorn",
+    "vampire",
+    "yeti"
+  ];
+
+  $scope.ogLogoCollection = imgCollection.map(function(imgName){
+    return imgPrefixPath + imgName + imgFormat;
+  });
 
 });
