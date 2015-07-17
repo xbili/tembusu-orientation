@@ -275,7 +275,7 @@ angular.module("home/home.tpl.html", []).run(["$templateCache", function($templa
     "<div class=\"\">\n" +
     "  <div id=\"headSection\">\n" +
     "    <div class=\"container-fluid\">\n" +
-    "            <img id=\"landingLogo\" class=\"img-responsive\" src=\"../src/assets/img/logo.jpg\" alt=\"\" />\n" +
+    "            <img id=\"landingLogo\" class=\"img-responsive\" src=\"assets/img/bg/logo.jpg\" alt=\"\" />\n" +
     "    </div>\n" +
     "  </div>\n" +
     "</div>\n" +
@@ -288,7 +288,7 @@ angular.module("og/og.tpl.html", []).run(["$templateCache", function($templateCa
     "<div id=\"bg\" class=\"container-fluid\">\n" +
     "  <div class=\"row\">\n" +
     "    <div id=\"imgBox\" class=\"darken col-md-3\" ng-repeat=\"ogLogo in ogLogoCollection\">\n" +
-    "      <img class=\"img-responsive\" ng-src=\"{{ogLogo}}\" />\n" +
+    "      <img class=\"img-responsive\" ng-src=\"{{ogLogo}}\"/>\n" +
     "    </div>\n" +
     "  </div>\n" +
     "</div>\n" +
