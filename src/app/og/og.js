@@ -25,12 +25,14 @@ angular.module( 'ngVn.og', [
  */
 .config(function config( $stateProvider ) {
     // Only insert sub-routes in here, not main routes
+
     $stateProvider
     .state('og.ogSubView',
     {
       url: '/ogSubView',
       controller: 'OGSubViewCtrl',
-      templateUrl: 'og/ogSubView/ogSubView.tpl.html'
+      templateUrl: 'og/ogSubView/ogSubView.tpl.html',
+      parent: 'og'
     });
 })
 
@@ -38,10 +40,12 @@ angular.module( 'ngVn.og', [
  * And of course we define a controller for our route.
  */
 .controller( 'OGCtrl', function OGController( $scope ) {
+
+  // JS Variables
   imgPrefixPath = "assets/img/ogLogos/";
   imgFormat = ".jpeg";
 
-  imgCollection = [
+  imgNameCollection = [
     "basilisk",
     "centaur",
     "dragon",
@@ -60,9 +64,18 @@ angular.module( 'ngVn.og', [
     "yeti"
   ];
 
-  $scope.ogLogoCollection = imgCollection.map(function(imgName){
+  //Scope Variables
+  $scope.ogLogoCollection = imgNameCollection.map(function(imgName){
     return imgPrefixPath + imgName + imgFormat;
   });
 
-  $scope.test = "LALA";
+  $scope.imgNameCollection = imgNameCollection;
+
+  //To track index of image clicked
+  $scope.currentIndex = null;
+
+  $scope.setIndex = function(val){
+    $scope.currentIndex = val;
+  };
+
 });
