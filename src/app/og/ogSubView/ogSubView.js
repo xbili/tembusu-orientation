@@ -12,8 +12,7 @@
  * The dependencies block here is also where component dependencies should be
  * specified, as shown below.
  */
-angular.module( 'ngVn.og', [
-  'ngVn.og.ogSubView',
+angular.module( 'ngVn.og.ogSubView', [
   'ui.router',
   'plusOne'
 ])
@@ -25,44 +24,12 @@ angular.module( 'ngVn.og', [
  */
 .config(function config( $stateProvider ) {
     // Only insert sub-routes in here, not main routes
-    $stateProvider
-    .state('og.ogSubView',
-    {
-      url: '/ogSubView',
-      controller: 'OGSubViewCtrl',
-      templateUrl: 'og/ogSubView/ogSubView.tpl.html'
-    });
+
 })
 
 /**
  * And of course we define a controller for our route.
  */
-.controller( 'OGCtrl', function OGController( $scope ) {
-  imgPrefixPath = "assets/img/ogLogos/";
-  imgFormat = ".jpeg";
-
-  imgCollection = [
-    "basilisk",
-    "centaur",
-    "dragon",
-    "dwarf",
-    "elf",
-    "giant",
-    "goblin",
-    "hippogriff",
-    "lycanthrope",
-    "merfolk",
-    "phoenix",
-    "pixie",
-    "troll",
-    "unicorn",
-    "vampire",
-    "yeti"
-  ];
-
-  $scope.ogLogoCollection = imgCollection.map(function(imgName){
-    return imgPrefixPath + imgName + imgFormat;
-  });
-
-  $scope.test = "LALA";
+.controller( 'OGSubViewCtrl', function OGSubViewController( $scope ) {
+  $scope.test = "x marks the spot";
 });
