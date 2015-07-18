@@ -30,10 +30,11 @@ angular.module( 'ngVn.og.ogSubView', [
 /**
  * And of course we define a controller for our route.
  */
-.controller( 'OGSubViewCtrl', function OGSubViewController( $scope, $location ) {
-  // $scope.test = "x marks the spot";
-  $scope.back = function(){
-    $location.path('og');
-  };
+.controller( 'OGSubViewCtrl', function OGSubViewController( $scope ) {
+  $scope.test = "marks the spot";
 
+  $scope.back = function(){
+    alert("going back");
+    window.history.back();
+  };
 });

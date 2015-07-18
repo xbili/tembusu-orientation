@@ -77,5 +77,4 @@ angular.module( 'ngVn.og', [
   $scope.setIndex = function(val){
     $scope.currentIndex = val;
   };
-
 });

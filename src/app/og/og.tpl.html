@@ -1,8 +1,7 @@
 <!-- {{ogLogoCollection}} -->
-
 <div ui-view>
   <div id="bg" class="container-fluid">
-    <div class="row" ng-init="indxFirst = $index">
+    <div class="row">
       <div id="imgBox" class="darken col-md-3" ng-repeat="ogLogo in ogLogoCollection track by $index" ng-click="setIndex($index)">
         <nav>
             <a class="view" ui-sref="og.ogSubView"><img class="img-responsive" ng-src="{{ogLogo}}"/></a>
