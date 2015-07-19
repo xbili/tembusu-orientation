@@ -14,8 +14,7 @@
  */
 angular.module( 'ngVn.og', [
   'ngVn.og.ogSubView',
-  'ui.router',
-  'plusOne'
+  'ui.router'
 ])
 
 /**
