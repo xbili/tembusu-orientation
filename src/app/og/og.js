@@ -31,7 +31,7 @@ angular.module( 'ngVn.og', [
  */
 .controller( 'OGCtrl', function OGController( $scope ) {
   imgPrefixPath = "assets/img/ogLogos/";
-  imgFormat = ".jpg";
+  imgFormat = ".jpeg";
 
   imgCollection = [
     "basilisk",
