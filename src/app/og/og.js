@@ -13,8 +13,7 @@
  * specified, as shown below.
  */
 angular.module( 'ngVn.og', [
-  'ui.router',
-  'plusOne'
+  'ui.router'
 ])
 
 /**
