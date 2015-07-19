@@ -1,4 +1,9 @@
-node_modules
-dist
+/node_modules
+/bower_components
+/build
+/dist
+/karma
 .tmp
 .DS_Store
+.sketch
+.psd

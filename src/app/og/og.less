@@ -1,0 +1,90 @@
+#bg {
+  background: url("img/bg/landing.jpg") no-repeat center top;
+	text-align:center;
+	background-attachment: relative;
+	background-position: center center;
+	min-height: 100%px;
+	width: 100%;
+
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+@grid-gutter-width: 0px; // removes gap between images
+
+#imgBox.darken {
+  // -webkit-filter: grayscale(100%) !important;
+    display: inline-block;
+    background: black;
+    padding: 0;
+}
+
+#imgBox.darken{
+    display: block;
+
+    -webkit-transition: all 0.3s linear;
+       -moz-transition: all 0.3s linear;
+        -ms-transition: all 0.3s linear;
+         -o-transition: all 0.3s linear;
+            transition: all 0.3s linear;
+}
+
+#imgBox.darken:hover{
+    color: black;
+    -webkit-filter: grayscale(100%) invert(100%) ;
+    filter: grayscale(100%) invert(100%);
+  // -webkit-filter: saturate(100%) !important;
+    // opacity: 0.6;
+}
+
+
+// //Card Flip Animation
+// /* entire container, keeps perspective */
+// .flip-container {
+// 	perspective: 1000;
+// }
+// 	/* flip the pane when hovered */
+// 	.flip-container:hover .flipper, .flip-container.hover .flipper {
+// 		transform: rotateY(180deg);
+// 	}
+//
+// .flip-container, .front, .back {
+// 	width: 320px;
+// 	height: 480px;
+// }
+//
+// /* flip speed goes here */
+// .flipper {
+// 	transition: 0.6s;
+// 	transform-style: preserve-3d;
+//
+// 	position: relative;
+// }
+//
+// /* hide back of pane during swap */
+// .front, .back {
+// 	backface-visibility: hidden;
+//
+// 	position: absolute;
+// 	top: 0;
+// 	left: 0;
+// }
+//
+// /* front pane, placed above back */
+// .front {
+// 	z-index: 2;
+// 	/* for firefox 31 */
+// 	transform: rotateY(0deg);
+// }
+//
+// /* back, initially hidden pane */
+// .back {
+// 	transform: rotateY(180deg);
+// }

@@ -1,20 +1,11 @@
-angular.module( 'ngBoilerplate.about', [
+angular.module( 'ngVn.about', [
   'ui.router',
   'placeholders',
   'ui.bootstrap'
 ])
 
-.config(function config( $stateProvider ) {
-  $stateProvider.state( 'about', {
-    url: '/about',
-    views: {
-      "main": {
-        controller: 'AboutCtrl',
-        templateUrl: 'about/about.tpl.html'
-      }
-    },
-    data:{ pageTitle: 'What is It?' }
-  });
+.config(function config( $stateProvider ) { 
+    // Only define sub-routes here
 })
 
 .controller( 'AboutCtrl', function AboutCtrl( $scope ) {
@@ -27,3 +18,4 @@ angular.module( 'ngBoilerplate.about', [
 })
 
 ;
+

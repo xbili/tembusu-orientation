@@ -12,8 +12,9 @@
  * The dependencies block here is also where component dependencies should be
  * specified, as shown below.
  */
-angular.module( 'ngVn.home', [
-  'ui.router'
+angular.module( 'ngVn.og.ogSubView', [
+  'ui.router',
+  'plusOne'
 ])
 
 /**
@@ -23,11 +24,17 @@ angular.module( 'ngVn.home', [
  */
 .config(function config( $stateProvider ) {
     // Only insert sub-routes in here, not main routes
+
 })
 
 /**
  * And of course we define a controller for our route.
  */
-.controller( 'HomeCtrl', function HomeController( $scope ) {
+.controller( 'OGSubViewCtrl', function OGSubViewController( $scope ) {
+  $scope.test = "marks the spot";
 
+  $scope.back = function(){
+    alert("going back");
+    window.history.back();
+  };
 });
