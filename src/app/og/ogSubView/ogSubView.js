@@ -12,8 +12,7 @@
  * The dependencies block here is also where component dependencies should be
  * specified, as shown below.
  */
-angular.module( 'ngVn.og', [
-  'ngVn.og.ogSubView',
+angular.module( 'ngVn.og.ogSubView', [
   'ui.router',
   'plusOne'
 ])
@@ -26,55 +25,16 @@ angular.module( 'ngVn.og', [
 .config(function config( $stateProvider ) {
     // Only insert sub-routes in here, not main routes
 
-    $stateProvider
-    .state('og.ogSubView',
-    {
-      url: '/ogSubView',
-      controller: 'OGSubViewCtrl',
-      templateUrl: 'og/ogSubView/ogSubView.tpl.html',
-      parent: 'og'
-    });
 })
 
 /**
  * And of course we define a controller for our route.
  */
-.controller( 'OGCtrl', function OGController( $scope ) {
+.controller( 'OGSubViewCtrl', function OGSubViewController( $scope ) {
+  $scope.test = "marks the spot";
 
-  // JS Variables
-  imgPrefixPath = "assets/img/ogLogos/";
-  imgFormat = ".jpeg";
-
-  imgNameCollection = [
-    "basilisk",
-    "centaur",
-    "dragon",
-    "dwarf",
-    "elf",
-    "giant",
-    "goblin",
-    "hippogriff",
-    "lycanthrope",
-    "merfolk",
-    "phoenix",
-    "pixie",
-    "troll",
-    "unicorn",
-    "vampire",
-    "yeti"
-  ];
-
-  //Scope Variables
-  $scope.ogLogoCollection = imgNameCollection.map(function(imgName){
-    return imgPrefixPath + imgName + imgFormat;
-  });
-
-  $scope.imgNameCollection = imgNameCollection;
-
-  //To track index of image clicked
-  $scope.currentIndex = null;
-
-  $scope.setIndex = function(val){
-    $scope.currentIndex = val;
+  $scope.back = function(){
+    alert("going back");
+    window.history.back();
   };
 });
