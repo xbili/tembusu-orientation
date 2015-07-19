@@ -8,6 +8,7 @@
   <!-- font awesome from BootstrapCDN -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
   <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.0.1/components/button.min.css" rel="stylesheet">
 
   <!-- compiled CSS --><% styles.forEach( function ( file ) { %>
     <link rel="stylesheet" type="text/css" href="<%= file %>" /><% }); %>
@@ -21,9 +22,9 @@
       <nav id="body-nav">
         <ul>
           <li><a class="view" ui-sref="home">home</a></li>
-          <li><a class="view" ui-sref="about">about</a></li>
-          <li><a class="view" ui-sref="updates">news</a></li>
+          <li><a class="view" ui-sref="updates">updates</a></li>
           <li><a class="view" ui-sref="og">groups</a></li>
+          <li><a class="view" ui-sref="about">about</a></li>
         </ul>
       </nav>
 
@@ -44,7 +45,6 @@
     </nav> -->
 
     <div ui-view></div>
-
 
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>

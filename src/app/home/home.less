@@ -1,25 +1,18 @@
-@import url(http://fonts.googleapis.com/css?family=UnifrakturMaguntia);
-// .container {
-//   padding-right: 0;
-//   padding-left: 0;
-//   margin-right: auto;
-//   margin-left: auto;
-// }
-img{
-  background-color:rgba(255,0,0,0.5);
-}
+// @import url(http://fonts.googleapis.com/css?family=UnifrakturMaguntia);
+@import url(http://fonts.googleapis.com/css?family=Josefin+Slab:300,400,700);
 
 /* ----------- Non-Retina Screens ----------- */
 
 #headSection {
+  z-index: -10;
   position: fixed;
-  background-color: #212121;
+  background-color: #1F1F1F;
   // background-size:cover;
   display: flex;
   justify-content: center; /* align horizontal */
   align-items: center; /* align vertical */
   text-align:center;
-  padding-bottom: 100px;
+  padding-bottom: 20px;
   background-attachment: relative;
   background-position: center center;
   min-height: 100%;
@@ -37,18 +30,19 @@ img{
       padding: 0px;
       margin: 0px;
   }
-
-  .container-fluid .row{
-    font-family: 'UnifrakturMaguntia', cursive;
-    font-size: 60px;
-    color: #654321;
-  }
+}
+.uicontainer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  // justify-content: center; /* align horizontal */
+  // align-items: center; /* align vertical */
+  line-height: 180vh;
+  text-align:center;
 }
 
-@media screen
-  and (min-device-width: 1200px)
-  and (max-device-width: 1600px) {
-  #headSection{
-    max-height: 5px
-  }
+#continueBtn{
+  font-family: 'Josefin Slab', serif;
+  font-size: 20px;
+  z-index: 10;
 }
