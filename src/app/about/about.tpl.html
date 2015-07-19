@@ -1,17 +1,18 @@
-<div class="row">
-    <header class="col-md-12">
-        <h1 class="text-center">The Team</h1>
-    </header>
+<div class="about">
+    <div class="container">
+        <header class="row">
+            <h1>The Team</h1>
+        </header>
 
-    <div class="col-md-12" ng-repeat="member in teamMembers track by $index">
-        <div class="col-xs-12 col-md-offset-4 col-md-4">
-            <img class="vn-about-profile img-circle img-responsive center-block" src="/assets/images/{{ member.shortname }}_profile.jpg" alt="{{ member.name }}" />
-        </div>
-        <div class="col-xs-12">
-            <p class="h3 text-center">{{ member.name }}</p>
-            <p class="h4 text-center">{{ member.title }}</p>
-            <p class="lead">{{ member.about }}</p>
+        <div class="row">
+            <div class="col-md-12 bot-margin-1" ng-repeat="member in teamMembers">
+                <div class="vn-member-box all-padding-2">
+                    <img class="vn-profile-img center-block img-circle img-responsive" src="/assets/img/about/{{ member.shortname }}_profile.jpg" alt="{{ member.name }}" />
+                    <h2 class="text-center">{{ member.name }}</h2>
+                    <p class="text-center">{{ member.title }}</p>
+                    <p>{{ member.about }}</p>
+                </div>
+            </div>
         </div>
     </div>
 </div>
-
