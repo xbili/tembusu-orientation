@@ -33,7 +33,6 @@ angular.module( 'ngVn.og.ogSubView', [
   $scope.test = "marks the spot";
 
   $scope.back = function(){
-    alert("going back");
     window.history.back();
   };
 });
