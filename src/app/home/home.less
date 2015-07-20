@@ -27,8 +27,8 @@
   background-size: cover;
 
   .container-fluid {
-      padding: 0px;
-      margin: 0px;
+    padding: 0px;
+    margin: 0px;
   }
 }
 .uicontainer {
@@ -39,6 +39,12 @@
   // align-items: center; /* align vertical */
   line-height: 180vh;
   text-align:center;
+
+  @media only screen
+  and (min-device-width : 320px)
+  and (max-device-width : 568px) {
+    line-height: 160vh;
+  }
 }
 
 #continueBtn{
