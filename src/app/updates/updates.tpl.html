@@ -1,19 +1,18 @@
-<div class="updates">
-    <div class="container left-padding-2 right-padding-2">
-        <header class="row">
-            <div class="col-md-12 text-center">
-                <h1>Latest Updates</h1>
-            </div>
-        </header>
-
-        <div class="row">
-            <article class="col-md-12 left-padding-1 right-padding-1 bot-margin-1" ng-repeat="update in updates">
-                <div class="vn-update-box all-padding-1">
-                    <h2>{{ update.title }}</h2>
-                    <p>{{ update.date }}</p>
-                    <p>{{ update.content }}</p>
-                </div>
-            </article>
+<div class="container left-padding-2 right-padding-2">
+    <header class="row">
+        <div class="col-md-12 text-center">
+            <h1>The Daily Prophet</h1>
         </div>
+    </header>
+
+    <div class="row">
+        <article class="col-md-4 left-padding-1 right-padding-1 bot-margin-1" ng-repeat="update in updates">
+            <div class="vn-update-box all-padding-1">
+                <h2>{{ update.title }}</h2>
+                <p>{{ update.date }}</p>
+                <p>{{ update.content }}</p>
+            </div>
+        </article>
     </div>
 </div>
+
