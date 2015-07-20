@@ -7,7 +7,58 @@
         </header>
 
         <div class="row">
-            <div class="col-md-12 bot-margin-1" ng-repeat="member in teamMembers">
+            <div class="col-md-3 bot-margin-1 all-padding-1" ng-repeat="member in teamMembers">
+                <div class="vn-member-box all-padding-2">
+                    <img class="vn-profile-img center-block img-circle img-responsive" src="/assets/img/about/{{ member.shortname }}_profile.jpg" alt="{{ member.name }}" />
+                    <h2 class="text-center">{{ member.name }}</h2>
+                    <p class="text-center">{{ member.title }}</p>
+                    <p>{{ member.about }}</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 all-padding-1">
+                <div class="vn-member-box all-padding-2">
+                    <h2 class="text-center">Logistics</h2>
+                    <ul>
+                        <li ng-repeat="member in teamMembers">{{ member.name }}</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-6 all-padding-1">
+                <div class="vn-member-box all-padding-2">
+                    <h2 class="text-center">Publicity</h2>
+                    <ul>
+                        <li ng-repeat="member in teamMembers">{{ member.name }}</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 all-padding-1">
+                <div class="vn-member-box all-padding-2">
+                    <h2 class="text-center">Marketing</h2>
+                    <ul>
+                        <li ng-repeat="member in teamMembers">{{ member.name }}</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-6 all-padding-1">
+                <div class="vn-member-box all-padding-2">
+                    <h2 class="text-center">Programmes</h2>
+                    <ul>
+                        <li ng-repeat="member in teamMembers">{{ member.name }}</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-3 bot-margin-1 all-padding-1" ng-repeat="member in teamMembers">
                 <div class="vn-member-box all-padding-2">
                     <img class="vn-profile-img center-block img-circle img-responsive" src="/assets/img/about/{{ member.shortname }}_profile.jpg" alt="{{ member.name }}" />
                     <h2 class="text-center">{{ member.name }}</h2>
