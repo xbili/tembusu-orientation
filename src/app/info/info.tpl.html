@@ -1,0 +1,56 @@
+<div class="container">
+  <div id="mainDiv">
+    <h1 id="header">Info</h1>
+        <!-- Section 1 -->
+        <h3 class="title">Camp Details</h3>      <br>
+        <h4>{{campDetails[0]}}</h4>       <br>
+
+        <h4>For check-in, please have the following prepared: </h4>
+        <ul>
+          <li>Matriculation card</li>
+          <li>Indemnity form (printed and filled) | <a href="{{indemnityForm}}">download</a></li>
+          <li>Swimming form (printed and filled) | <a href="{{swimmingForm}}">download</a></li>
+        </ul>
+        <br>
+
+        <h4>{{campDetails[1]}}</h4>
+        <br>
+
+        <!-- Section 2 -->
+        <h3 class="title">Camp List</h3>
+        <div class="row">
+          <div class="col-md-4">
+            <h4>Basics</h4>
+            <ul ng-repeat="basic in basics">
+              <li>{{basic}}</li>
+            </ul>
+            <br>
+          </div>
+          <div class="col-md-4">
+            <h4>Essentials</h4>
+            <ul ng-repeat="essential in essentials">
+              <li>{{essential}}</li>
+            </ul>
+            <br>
+          </div>
+          <div class="col-md-4">
+            <h4>Optionals</h4>
+            <ul ng-repeat="optional in optionals">
+              <li>{{optional}}</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Section 3 -->
+        <h3 class="title">FAQs</h3>
+        <ul ng-repeat="(qn, ans) in faq">
+          <br>
+          <li>{{qn}}</li>
+          <br>
+          <p>
+            {{ans}}
+          </p>
+        </ul>
+
+  </div>
+</div>
