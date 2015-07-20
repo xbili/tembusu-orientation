@@ -5,6 +5,7 @@ angular.module( 'ngVn', [
   'ngVn.og',
   'ngVn.about',
   'ngVn.updates',
+  'ngVn.info',
   'ui.router'
 ])
 
@@ -46,6 +47,12 @@ angular.module( 'ngVn', [
     //  })  JSON URL
     //   }]
     // }
+  }).state('info',
+  {
+    url: '/info',
+    controller: 'InfoCtrl',
+    templateUrl: 'info/info.tpl.html',
+    data: { pageTitle: 'Info' }
   });
 }])
 
