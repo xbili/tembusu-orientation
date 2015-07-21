@@ -44,8 +44,7 @@ angular.module( 'ngVn.og', [
 /**
 * And of course we define a controller for our route.
 */
-.controller( 'OGCtrl', function OGController( $scope ) {
-
+.controller( 'OGCtrl', function OGController( $scope, $rootScope, $http ) {
   // JS Variables
   imgPrefixPath = "assets/img/ogLogos/";
   imgFormat = ".jpeg";
@@ -74,14 +73,23 @@ angular.module( 'ngVn.og', [
     return imgPrefixPath + imgName + imgFormat;
   });
 
-  $scope.imgNameCollection = imgNameCollection;
+ $scope.imgNameCollection = imgNameCollection;
+
+  //Load OG Info
+  $http.get('assets/data/ogSubView/ogSubView.json').
+    then(function(res){
+      $scope.ogInfo = res.data;
+  });
 
   //To track index of image clicked
-  $scope.currentIndex = null;
+  $rootScope.currentIndex = null;
   $scope.currentName = null;
 
   $scope.setIndex = function(val){
-    $scope.currentIndex = val;
+    $rootScope.currentIndex = val;
     $scope.currentName = imgNameCollection[val];
+    $(document).ready(function () {
+        window.scrollTo(0,0);
+    });
   };
 });

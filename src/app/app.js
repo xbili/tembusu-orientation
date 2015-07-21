@@ -41,13 +41,7 @@ angular.module( 'ngVn', [
     controller: 'OGCtrl',
     templateUrl: 'og/og.tpl.html',
     data: { pageTitle: 'Orientation Groups' }
-    // onEnter: function(){
-    //   $('.slide').fadeIn("slow");
-    //   // $('.slide').fadeIn();
-    // },
-    // onExit: function(){
-    //   $('.slide').fadeOut("slow");
-    // }
+
     // resolve: {
     //   timeline: ['$http', function($http){
     //     return $http.get('api/timeline.json').then(function(response){
