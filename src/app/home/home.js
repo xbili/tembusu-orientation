@@ -30,6 +30,8 @@ angular.module( 'ngVn.home', [
  */
 .controller( 'HomeCtrl', function HomeController( $scope, $state ) {
   $scope.proceed = function(){
+    // $scope.slide = 'slide-left';
+    // $location.url('/info');
     $state.go('updates');
   };
 });
