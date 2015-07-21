@@ -1,0 +1,77 @@
+[
+    {
+        "committee": "Main",
+        "description": "The Main Organising Committee for Tembusu Orientation Week 2015 is headed by Johandy Tantra and Moazzam Ali Khan, the Vice President and President of the College Student’s Committee respectively. Meeting on a weekly basis for arduously long hours, we continuously iron out the camp so that it will be both flawless and enjoyable for all of you.",
+        "members": [
+            {
+                "name": "Johandy Tantra ",
+                "title": "Project Director"
+            },
+            {
+                "name": "Moazzam Ali Khan",
+                "title": "Vice Project Director"
+            },
+            {
+                "name": "Ryan Ee",
+                "title": "Programmes Head"
+            },
+            {
+                "name": "Goh E-Yang",
+                "title": "Programmes Head"
+            },
+            {
+                "name": "Anekant Jain",
+                "title": "Games Head"
+            },
+            {
+                "name": "Chin Zhao Yuan",
+                "title": "Games Head"
+            },
+            {
+                "name": "Toh Si Hao",
+                "title": "Marketing Head"
+            },
+            {
+                "name": "Cheryl Tan",
+                "title": "Logistics Head"
+            },
+            {
+                "name": "Zhang Yu-Wei",
+                "title": "Logistics Head"
+            },
+            {
+                "name": "Felix Fernando",
+                "title": "Finance; Logistics Head"
+            },
+            {
+                "name": "Tania Cheong",
+                "title": "Publicity Head"
+            }
+        ]
+    },
+    {
+        "committee": "Programmes",
+        "description": "Leading the Programmes Committee are Ryan Ee and Goh E-Yang, Operations Director and Enrichment Director for the College Student’s Committee, while the Games Committee is headed by Anekant Jain and Chin Zhao Yuan, the CSC’s General Secretary and Enterprise Director respectively. The programmes committee has worked hard in planning the camp’s general timeline, main storyline and accompanying events, while the games committee complement the storyline with a lineup of fun and exciting games. They will be letting their hair down marshalling as game masters during the camp, all so you can have a whale of a time at this year’s Tembusu Orientation Week.",
+        "members": ["Ashkvina Rajendran", "Cheong Yinn Shan", "Cheryl Chow", "Goh Zheng Han", "Grace Lee", "Kenneth Tham", "Michelle Heng", "Joshua Chan", "Liew Jia Hao", "Natalie Lie", "Nisha Verma", "Rebacca Ng", "Samantha Lee", "Seow Jian Jun", "Sim Fu-Hua", "Soh Wei Xuan", "Tay Ying Hui", "Vanessa Teo", "Zhang Xin Yan"]
+    },
+    {
+        "committee": "Logistics",
+        "description": "The terrific trio of Cheryl Tan, Zhang Yu-Wei and Felix Fernando head the Logistics Committee in their capacity as Welfare Secretary and Community Outreach Director of the College Student’s Committee respectively. The brawn behind the CSC’s vision for Tembusu Orientation Week 2015, the Committee ensures the smooth execution of the camp by handling administrative matters regarding food, transport and venues, as well as supplying equipment required prior to and during the camp.",
+        "members": ["Fandy Lamgabe Sihombing", "Foo Sek Zen", "Jonathan Steven Mulia", "Lee Haiin", "Mong Yunheng", "Prashan Kunalan", "Tan Siow Ching, Alicia"]
+    },
+    {
+        "committee": "Marketing",
+        "description": "Sports Director for the College Student’s Committee, Toh Si Hao, leads the Marketing Committee for Tembusu Orientation Week 2015. The Committee manages camp funds and acquires sponsorships for the welfare of all participants in TOW 15.",
+        "members": ["Guo Zhou Hong", "Lee Man Lin, Alexis", "Teoh Ean Xiang"]
+    },
+    {
+        "committee": "Publicity",
+        "description": "Headed by Tania Cheong, the Arts Director for the College Student’s Committee, the Publications Committee manages all media and publicity collaterals for Tembusu Orientation Week 2015. From the Orientation website to the videography employed for the camp, the Committee ensures a holistic experience for all participants in TOW 15, and will also be managing photo-taking during the camp.",
+        "members": ["Amit Gamane", "Andieka Putra", "Calvin Chan", "David Phoon", "Pang Guet Ghee", "Shawn Lim", "Xu Bili"]
+    },
+    {
+        "committee": "Finance",
+        "description": "Finance Secretary for the College Student’s Committee, Felix Fernando, is the Finance Head for Tembusu Orientation Week 2015, aiding the Marketing Committee in the management and expenditure of funds.",
+        "members": [""]
+    }
+]
