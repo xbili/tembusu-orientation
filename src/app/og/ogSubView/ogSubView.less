@@ -1,10 +1,7 @@
-// #subview{
-//     padding: 3%;
-//     padd
-// }
+
 
 #ogHeader, #ogl{
-  padding-top: 5%;
+  // padding-top: 5%;
   font-size: 80px;
   text-align: center;
 }
@@ -30,6 +27,12 @@
   color: rgb(193, 193, 193);
   font-size: 20px;
   padding: 1%;
+
+  @media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px) {
+  padding: 5%;
+}
 }
 
 #quote{
@@ -76,14 +79,12 @@
   transition: all .1s ease-in-out;
 }
 .ogl{
-text-align: left;
+  text-align: left;
 
-li{
-  font-size: 30px;
+  li{
+    font-size: 30px;
+  }
 }
-}
-
-
 
 .col-md-2 img {
   padding-left: 1%;
