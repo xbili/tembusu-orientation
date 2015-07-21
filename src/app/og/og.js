@@ -78,8 +78,10 @@ angular.module( 'ngVn.og', [
 
   //To track index of image clicked
   $scope.currentIndex = null;
+  $scope.currentName = null;
 
   $scope.setIndex = function(val){
     $scope.currentIndex = val;
+    $scope.currentName = imgNameCollection[val];
   };
 });
