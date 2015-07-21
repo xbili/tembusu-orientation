@@ -1,6 +1,45 @@
-<div class="container-fluid">
-  <button class="btn btn-success" type="button" name="Back" ng-click="back()">Back</button>
-  <p>
-    {{imgNameCollection[currentIndex]}} {{test}}
-  </p>
+<div class="container-fluid" id="subview">
+  <div class="row">
+    <i id="backBtn" class="fa fa-chevron-circle-left"></i>
+    <div class="col-md-6">
+      <img src="{{ogLogoCollection[currentIndex]}}" class="img-responsive" alt="" />
+    </div>
+    <div class="col-md-6" id="ogContent">
+      <p id="ogHeader">{{imgNameCollection[currentIndex]}}</p>
+      <div ng-repeat="(og, info) in ogInfo">
+        <div id="quote">
+          "{{info["quote"]}}"
+        </div>
+        <br>
+        <div id="by">
+          - {{info["by"]}}
+        </div>
+        <br>
+        <div id="desc">
+          {{info["desc"]}}
+        </div>
+        <br>
+
+        <p id="ogl">ogls</p>
+        <div class="row ogl">
+          <div class="col-md-4">
+            <img src="http://www.innovativephp.com/demo/impress-js-demos/chapter5/images/aboutme.jpg" class="img-responsive" alt="" />
+            <br>
+            ogl1
+          </div>
+          <div class="col-md-4">
+            <img src="http://www.innovativephp.com/demo/impress-js-demos/chapter5/images/aboutme.jpg" class="img-responsive" alt="" />
+            <br>
+            ogl2
+          </div>
+          <div class="col-md-4">
+            <img src="http://www.innovativephp.com/demo/impress-js-demos/chapter5/images/aboutme.jpg" class="img-responsive" alt="" />
+            <br>
+            ogl3
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
 </div>
