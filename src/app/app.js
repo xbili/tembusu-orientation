@@ -6,6 +6,7 @@ angular.module( 'ngVn', [
   'ngVn.about',
   'ngVn.updates',
   'ngVn.info',
+  'ngAnimate',
   'ui.router'
 ])
 
