@@ -30,6 +30,11 @@ angular.module( 'ngVn.og.ogSubView', [
 * And of course we define a controller for our route.
 */
 .controller( 'OGSubViewCtrl', function OGSubViewController( $scope ) {
+  $('.og').fadeIn(600);
+  $(document).ready(function () {
+      window.scrollTo(0,0);
+  });
+
   $scope.test = "marks the spot";
 
   $scope.goBack = function(){
@@ -37,5 +42,9 @@ angular.module( 'ngVn.og.ogSubView', [
   };
 
   $scope.currentOGInfo = $scope.ogInfo[$scope.currentName];
+  $scope.quote = "\"" + $scope.currentOGInfo["quote"] + "\"";
+  $scope.by = "- " + $scope.currentOGInfo["by"];
+  $scope.desc = $scope.currentOGInfo["desc"];
   $scope.ogls = $scope.currentOGInfo["ogls"];
+
 });

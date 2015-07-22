@@ -1,9 +1,9 @@
 <!-- {{ogLogoCollection}} -->
-<div ui-view class="ogView">
+<div ui-view id="ogView" ui-sref-active="active">
   <div id="bg" class="container-fluid">
     <div class="row">
       <div id="imgBox" class="darken col-md-3" ng-repeat="ogLogo in ogLogoCollection track by $index" ng-click="setIndex($index)">
-            <a class="view" ui-sref="og.ogSubView"><img class="img-responsive" ng-src="{{ogLogo}}"/></a>
+            <a class="view"><img class="img-responsive" ng-src="{{ogLogo}}"/></a>
       </div>
     </div>
   </div>

@@ -17,7 +17,7 @@
     <script type="text/javascript" src="<%= file %>"></script><% }); %>
 
   </head>
-  <body class="{{ routeClass }}">
+  <body ng-cloak class="{{ routeClass }}">
     <div class="vn-navbar container-fluid">
       <nav id="body-nav">
         <ul>
@@ -45,7 +45,7 @@
 
     </nav> -->
 
-    <div ui-view></div>
+    <div ui-view id="masterUI"></div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.3/angular-animate.min.js"></script>
     <script src="assets/js/jquery.min.js"></script>
@@ -53,5 +53,6 @@
     <script src="assets/js/classie.js"></script>
     <script src="assets/js/smoothscroll.js"></script>
     <script src="assets/js/navbar.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.3/angular-sanitize.min.js"></script>
   </body>
   </html>

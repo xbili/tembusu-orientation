@@ -20,7 +20,7 @@
    },
    "merfolk":{  
       "quote":"I must be a mermaid, Rango. I have no fear of depths and a great fear of shallow living.",
-      "by":"The Four-Chambered Heart, Anaïs Nin",
+      "by":"<i>The Four-Chambered Heart</i>, Anaïs Nin",
       "desc":"In drowned cities long far removed from human eyes dwell still the Merpeople, part fish, part human, wholly creatures of the oceans in which they inhabit. As they live on in human lore as mere fantastical beings who keep talking lobsters and fishes for company, away in the deepest waters the legend of the Merpeople grow fiercer and wilder. Bubbling with tremendous power they subdue leviathans with great tridents wrought of sacred seastone, fending enemies off with large crescent sweeps of their slicing, sinuous tails. What little books that have been written about them all ascertain one thing: their shadowy, mysterious existence in the minds of terrestrial beings belie a great civilisation prowling the ocean floors.",
       "headOGL":"kenneth",
       "ogls":[  
@@ -47,7 +47,7 @@
    },
    "yeti":{  
       "quote":"Listen to me. Love is a Yeti. It is bigger than you and frightening and terrible. It makes loud and vicious noises. It is hungry all the time. It has horns and teeth and the force of its fists is more than anyone can bear. It speeds up time and slows it down. And it has its own aims and missions that those who are lucky enough to see it cannot begin to guess. You might see a Yeti once in your life or never. You might live in a village of them. But in the end, not matter how fast you think you can go, the Yeti is always faster than you, and you can only choose how you say hello to it, and whether you shake its hand.",
-      "by":"The Girl Who Soared Over Fairyland and Cut the Moon in Two, Catherynne M. Valente",
+      "by":"<i>The Girl Who Soared Over Fairyland and Cut the Moon in Two</i>, Catherynne M. Valente",
       "desc":"In the wintry slopes of the Himalayas a team of explorers spot a lone shadow wandering the mountainsides, braving the harsh snowstorm in what seems to be a shaggy coat of animal fur. When the weather calms large animal footprints are found impressed in the thick snow; but the silhouette of the mysterious figure was clearly human, or so they believed. Before the unrelenting weather covers the tracks the explorers follow them, only to find that they lead to a sheer stony face of a mountain impossible to scale. There, while they stood puzzled and bewildered, their accompanying sherpas, with a stoic look of recognition, point at a distant form now atop the cliff, uttering the word ‘yeti’ to the explorers staring in wild amazement.",
       "headOGL":"pradeep",
       "ogls":[  
@@ -55,8 +55,8 @@
       ]
    },
    "phoenix":{  
-      "quote":"And made the glove-winged albatross Scour the ashes of the sea Where Capricorn and Zero cross, A brooding immortality— Such as the charmed phoenix has In the unwithering tree.",
-      "by":"Genesis, Geoffrey Hill",
+      "quote":"And made the glove-winged albatross<br> Scour the ashes of the sea<br> Where Capricorn and Zero cross,<br> A brooding immortality-<br> Such as the charmed phoenix has<br> In the unwithering tree.",
+      "by":"<i>Genesis</i>, Geoffrey Hill",
       "desc":"Phoenixes rose as the sparking embers of a star, witnesses to the living light that first broke from the yolk of a primordial darkness before the earth took shape. Since then they had never truly died — every glowing coal of a dying flame shivers with the quivering of a rising phoenix; and if it so chooses, it shall lift itself from the cumbrous dust to be reborn anew. With its scarlet and golden plumage shimmering in the sun, with its golden tail fanning out in rays of light, it deigns to live for centuries more, for kalpas, before it grows weary and plunges itself into smoking ashes, seeking repose. And so the neverending cycle continues, and with another turn of the wheel the phoenix arises once more, meeting the world again with its terrible glowing eyes.",
       "headOGL":"abigail",
       "ogls":[  
@@ -64,8 +64,8 @@
       ]
    },
    "vampire":{  
-      "quote":"As he spoke he smiled, and the lamplight fell on a hardlooking mouth, with very red lips and sharp-looking teeth, as white as ivory. One of my companions whispered to another the line from Bürger's Lenore. ‘Denn die Todten reiten Schnell.’ (‘For the dead travel fast.’)",
-      "by":"Dracula, Bram Stoker",
+      "quote":"As he spoke he smiled, and the lamplight fell on a hardlooking mouth, with very red lips and sharp-looking teeth, as white as ivory. One of my companions whispered to another the line from Burger's <i>Lenore</i>. <br><br>'<i>Denn die Todten reiten Schnell</i>' ('For the dead travel fast')",
+      "by":"<i>Dracula</i>, Bram Stoker",
       "desc":"It is right to cower at things that go bump in the night, for the Vampires stalk the dead hours before the saving light of the sun. Spectres that rule the dark, these unholy beings of the undead uphold a cursed covenant — unnatural immortality and black magicks for the blood of the living. And so, rue the night when the Vampires, swathed in their winged capes of darkness, flit and shift by the pale moonlight, and stop you dead in your tracks. They shall beckon you into their open arms, mesmerised by the sight of an ominous vision: the dark moons of their flashing eyes drenched in warm blood as the Vampire plunges its ivory fangs into a throbbing, pulsing artery.",
       "headOGL":"amirul",
       "ogls":[  
@@ -74,8 +74,8 @@
       ]
    },
    "basilisk":{  
-      "quote":"Be thou like the imperial Basilisk. Killing thy foe with unapparent wounds.Gaze on Oppression, till at that dread risk. Aghast she pass from the Earth’s disk. Fear not, but gaze—for freemen mightier grow, And slaves more feeble, gazing on their foe:— If Hope, and Truth, and Justice may avail, Thou shalt be great—All hail!",
-      "by":"Ode to Naples, Percy Bysshe Shelley",
+      "quote":"Be thou like the imperial Basilisk <br> Killing thy foe with unapparent wounds!<br>Gaze on Oppression, till at that dread risk<br> Aghast she pass from the Earth’s disk:<br> Fear not, but gaze-for freemen mightier grow,<br> And slaves more feeble, gazing on their foe:-<br> If Hope, and Truth, and Justice may avail,<br> Thou shalt be great-All hail!",
+      "by":"<i>Ode to Naples</i>, Percy Bysshe Shelley",
       "desc":"Walking into the lair of a basilisk is not unlike walking into a stone garden, excepting the fact that the sculptures one witnesses are not wrought from the hands of a master carver, but by the single glance from the king of serpents. Hatched from a cock’s egg incubated under a toad, these rare but lethal reptiles petrify all those who dare stare into their monstrous gaze. Victims who manage to avert their eyes, by sheer luck or a stroke of genius, nevertheless despair as the basilisk crushes and asphyxiates them in its great coils, delivering the coup de grâce with its deadly, poisonous fangs.",
       "headOGL":"liana",
       "ogls":[  
@@ -84,7 +84,7 @@
    },
    "troll":{  
       "quote":"‘I'm a troll,’ he said. Then he paused, and added, more or less as an afterthought, ‘Fol rol de ol rol.’",
-      "by":"Troll Bridge, Neil Gaiman",
+      "by":"<i>Troll Bridge</i>, Neil Gaiman",
       "desc":"Language comes difficult to the Trolls, and so the uttering of unintelligible gibberish is an accomplished feat in itself for these creatures of prodigious strength and immense stupidity. Often found under bridges — the structure keeps the weather out, while the river affords easy sustenance — the Trolls are smelt before they are seen. Occasionally, unfortunate humans and animals curious enough to suss out the stench are instead taken for rare sport by the Trolls, whose days are lived out in constant amusement and distraction by the most trivial of activities. The Trolls’ clumsy mishandling of these newfound playmates, however, often mean an early demise for their ‘friends’, and fresh meat for the vacant days to come.",
       "headOGL":"marisa",
       "ogls":[  
@@ -93,7 +93,7 @@
    },
    "giant":{  
       "quote":"It was sometimes said that the grey-and-black mountain range which ran like a spine north to south down that part of Faerie had once been a giant, who grew so huge and so heavy that, one day, worn out from the sheer effort of moving and living, he had stretched out on the plain and fallen into a sleep so profound that centuries passed between heartbeats.",
-      "by":"Stardust, Neil Gaiman",
+      "by":"<i>Stardust</i>, Neil Gaiman",
       "desc":"Once, in every aeon, a mountain awakes from its stony slumber, and when it does it walks the earth as a colossal Giant, who felled forests and emptied lakes in its wake. Traversing continents in mere days, every Giant terraforms the land it deigns to land its feet on, and for a time the sun is occluded from the sky; the earth trembles in violent rumbling, and hordes of beasts flee wherever they can from the raised foot of an ambling Giant. For all their prodigious might and terrible stature, however, the Giants rarely move for too long before succumbing to the call of the earth once more, sleeping again for another aeon.",
       "headOGL":"wenjie",
       "ogls":[  
@@ -112,7 +112,7 @@
    },
    "dwarf":{  
       "quote":"A dwarf who brings a standard along with him to measure his own size, take my word, is a dwarf in more articles than one.",
-      "by":"Thebaid VII, Publius Papinius Statius",
+      "by":"Laurence Sterne",
       "desc":"In the high Nordic mountains groans and rumblings echo throughout the rocky formations, living signs of the Dwarves’ activities that occur deep below the stony facades. Mining, smithing and smelting, the dwarves, despite their stocky and short stature, are masters of their craft, forging great weapons several times their size. Completely isolated in their hot and dark caves, dwarves are rarely seen to wander outside of their abode; and even then, a vagrant dwarf is easily mistaken for a distant boulder rolling down the mountainside. Relative seclusion has bred in the dwarves a singularly temperamental nature; they do not take well to outsiders, often finding offence at the slightest condescension, especially at their stature, and are never as easily placated once angered.",
       "headOGL":"debbie",
       "ogls":[  
@@ -121,17 +121,17 @@
       ]
    },
    "unicorn":{  
-      "quote":"Even so the half-brute Centaur leaps down into the vale from the airy height of Ossa: at himself the lofty forests quake in fear, at the horse the plain shakes.",
-      "by":"Laurence Sterne",
-      "desc":"In the high Nordic mountains groans and rumblings echo throughout the rocky formations, living signs of the Dwarves’ activities that occur deep below the stony facades. Mining, smithing and smelting, the dwarves, despite their stocky and short stature, are masters of their craft, forging great weapons several times their size. Completely isolated in their hot and dark caves, dwarves are rarely seen to wander outside of their abode; and even then, a vagrant dwarf is easily mistaken for a distant boulder rolling down the mountainside. Relative seclusion has bred in the dwarves a singularly temperamental nature; they do not take well to outsiders, often finding offence at the slightest condescension, especially at their stature, and are never as easily placated once angered.",
+      "quote":"Stars were golden unicorns neighing unheard through blue meadows.",
+      "by":"<i>Soldier's Pay</i>, William Faulkner ",
+      "desc":"Fleeting as the comets that streak the cosmos, to catch a glimpse, unseen, of the elusive Unicorns is an incredible stroke of luck. Graceful and magnificent are these equine creatures, their sparkling bodies crowned by a single horn of purest ivory: the coronal jewel that boasts of both terrible beauty and fearful awe, piercing both the hearts of coldest stone and the armour of the thickest metals. Immortality is granted to those who drink of the Unicorns' milky blood, but cursed are they too for all eternity. It is for these reasons that the Unicorns are relentlessly pursued by prize hunters; however, the fleet-of-hoof Unicorns evade all capture, and finding one is a nigh impossible task.",
       "headOGL":"wynette",
       "ogls":[  
          "zen"
       ]
    },
    "goblin":{  
-      "quote":"We must not look at goblin men, We must not buy their fruits: Who knows upon what soil they fed Their hungry thirsty roots?",
-      "by":"Goblin Market and Other Poems, Christina Rossetti",
+      "quote":"We must not look at goblin men,<br> We must not buy their fruits:<br> Who knows upon what soil they fed<br> Their hungry thirsty roots? ",
+      "by":"<i>Goblin Market and Other Poems</i>, Christina Rossetti",
       "desc":"A distant relative of the Trolls, what the small, lanky Goblins lack in the Trolls’ prodigious strength they make up for in quick-witted intellect and a natural disposition towards arcane chicanery. Possessing their own unique brand of magic, the Goblins have gained a notorious reputation for a propensity to polymorph unsuspecting wanderers into sheep and disguising sacks of potatoes as pots of gold. Their excessive exercise of trickery and the art of deception has also made it almost impossible to fool a Goblin; victims who have attempted to give these little creatures a taste of their own medicine have found themselves to be once more at the receiving end of various devious traps the Goblins have had planned for them.",
       "headOGL":"vincent",
       "ogls":[  
@@ -140,8 +140,8 @@
       ]
    },
    "hippogriff":{  
-      "quote":"But natural was the steed the wizard pressed; For him a filly to griffin bore; Hight hippogryph. In wings and beak and crest, Formed like his sire, as in the feet before; But like the mare, his dam, in all the rest. Such on Riphaean hills, though rarely found, Are bred, beyond the frozen ocean's bound.",
-      "by":"Orlando Furioso, Ludovico Ariosto",
+      "quote":"But natural was the steed the wizard pressed;<br> For him a filly to griffin bore;<br> Hight hippogryph. In wings and beak and crest,<br> Formed like his sire, as in the feet before;<br> But like the mare, his dam, in all the rest.<br> Such on Riphaean hills, though rarely found,<br> Are bred, beyond the frozen ocean's bound.",
+      "by":"<i>Orlando Furioso</i>, Ludovico Ariosto",
       "desc":"As the prized Pegasus is to Perseus, the Hippogriffs are the chosen steed for many a great knight and wizard, who ride these chimeric creatures — front quarters eagle, hind quarters horse — swiftly into battle. Proficient in combat, the Hippogriff mercilessly gouges the eyes of its enemies with its steel warbeak, before tearing them from limb to limb between its talons. It is, however, not only adept in fight but also flight, as its eyes flashes brilliantly cruel while evading pursuing enemies with swift flight and equine speed. With unparalleled loyalty, Hippogriffs never abandon their chosen riders, joining them into battle, even unto certain death.",
       "headOGL":"gracia",
       "ogls":[  

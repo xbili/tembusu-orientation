@@ -2,22 +2,22 @@
   {{currentIndex}}
   <div class="row">
     <i id="backBtn" ng-click="goBack()" class="fa fa-chevron-left"></i>
-    <div class="col-md-6">
+    <div class="col-md-6" id="headImg">
       <img src="{{ogLogoCollection[currentIndex]}}" class="img-responsive" alt="" />
     </div>
     <div class="col-md-6" id="ogContent">
-      <!-- <p id="ogHeader">{{currentName}}</p> -->
+      <p id="ogHeader">{{currentName}}</p>
       <div>
-        <div id="quote">
-          "{{currentOGInfo["quote"]}}"
+        <div id="quote" ng-bind-html="quote">
+          "{{quote}}"
         </div>
         <br>
-        <div id="by">
-          - {{currentOGInfo["by"]}}
+        <div id="by" ng-bind-html="by">
+          {{by}}
         </div>
         <br>
         <div id="desc">
-          {{currentOGInfo["desc"]}}
+          {{desc}}
         </div>
         <br>
 
