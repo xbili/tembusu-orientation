@@ -13,6 +13,7 @@
 	// });
 	$(function() {
 		$('.view').click(function() {
+			$('.fa-circle-o-notch').toggleClass("down");
 			if ($('body').hasClass('show-nav')) {
 				$('body').removeClass('show-nav').addClass('hide-nav');
 
