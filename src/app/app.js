@@ -7,7 +7,8 @@ angular.module( 'ngVn', [
   'ngVn.updates',
   'ngVn.info',
   'ngAnimate',
-  'ui.router'
+  'ui.router',
+  'ngSanitize'
 ])
 
 .config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider, $stateProvider){

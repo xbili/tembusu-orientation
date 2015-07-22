@@ -83,6 +83,7 @@ angular.module( 'ngVn.og', [
   // $scope.ogLogoCollection.push("assets/img/ogIcons/basiliskInvis.png");
 
  $scope.imgNameCollection = imgNameCollection;
+ 
   //Load OG Info
   $http.get('assets/data/ogSubView/ogSubView.json').
     then(function(res){

@@ -37,5 +37,9 @@ angular.module( 'ngVn.og.ogSubView', [
   };
 
   $scope.currentOGInfo = $scope.ogInfo[$scope.currentName];
+  $scope.quote = "\"" + $scope.currentOGInfo["quote"] + "\"";
+  $scope.by = "- " + $scope.currentOGInfo["by"];
+  $scope.desc = $scope.currentOGInfo["desc"];
   $scope.ogls = $scope.currentOGInfo["ogls"];
+
 });
