@@ -73,8 +73,16 @@ angular.module( 'ngVn.og', [
     return imgPrefixPath + imgName + imgFormat;
   });
 
- $scope.imgNameCollection = imgNameCollection;
+  iconPrefixPath = "assets/img/ogIcons/";
+  iconFormat = ".png";
 
+  $scope.iconCollection = imgNameCollection.map(function(imgName){
+    return iconPrefixPath + imgName + "Icon" + iconFormat;
+  });
+
+  // $scope.ogLogoCollection.push("assets/img/ogIcons/basiliskInvis.png");
+
+ $scope.imgNameCollection = imgNameCollection;
   //Load OG Info
   $http.get('assets/data/ogSubView/ogSubView.json').
     then(function(res){

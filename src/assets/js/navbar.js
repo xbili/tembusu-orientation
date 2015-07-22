@@ -56,6 +56,8 @@
 	$(document).keyup(function(e) {
 		if (e.keyCode == 27) {
 			if ($('body').hasClass('show-nav')) {
+				// $('.fa-circle-o-notch').removeClass("fa-rotate-180 fa-spin");
+				$('.fa-circle-o-notch').toggleClass("down");
 				$('body').removeClass('show-nav').addClass('hide-nav');
 
 				setTimeout(function() {
@@ -63,6 +65,8 @@
 				}, 500);
 
 			} else {
+				// $('.fa-circle-o-notch').addClass("fa-rotate-180 fa-spin");
+				$('.fa-circle-o-notch').toggleClass("down");
 				$('body').removeClass('hide-nav').addClass('show-nav');
 			}
 
