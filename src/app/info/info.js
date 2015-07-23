@@ -63,7 +63,7 @@ angular.module( 'ngVn.info', [
     "Bed sheets (super single) or Sleeping bag",
     "Phone charger", 
     "Toiletries",
-    "Toothbrush +  Toothpaste" 
+    "Toothbrush + Toothpaste" 
   ];
 
   $scope.essentials = [
@@ -86,7 +86,7 @@ angular.module( 'ngVn.info', [
 
   //faq
   $scope.faq = {
-    "Will there be a briefing on CORS bidding matters?": "Yes, due to an overwhelming number of questions we’ve been receiving on CORS bidding matters, the organizing committee has set aside some time on the first day to brief you on this.",
+    "Will there be a briefing on CORS bidding matters?": "Yes, due to an overwhelming number of questions we've been receiving on CORS bidding matters, the organizing committee has set aside some time on the first day to brief you on this.",
     "How formal must our formal wear be?": "Not so formal. Smart casual can suffice as well. Blazers are not required for girls and optional for guys.",
     "Do we check in on 2nd of August?": "The organizing committee will be making special arrangements for the freshmen to check-in which will be conveyed during the camp itself.",
     "Will we be moving into our own rooms?": "It is not confirmed if you will be moving into your own rooms, hence please bring the items required for the camp only."

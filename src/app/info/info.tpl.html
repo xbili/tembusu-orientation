@@ -2,39 +2,50 @@
   <div id="mainDiv">
     <h1 id="header">Info</h1>
         <!-- Section 1 -->
-        <h3 class="title">Camp Details</h3>      <br>
-        <h4>{{campDetails[0]}}</h4>       <br>
+        <h2 class="title">  <i class="fa fa-newspaper-o icon"></i> <br><br>Camp Details</h2><br>
 
-        <h4>For check-in, please have the following prepared: </h4>
-        <ul>
-          <li>Matriculation card</li>
-          <li>Indemnity form (printed and filled) | <a href="{{indemnityForm}}" target="_blank">download</a></li>
-          <li>Swimming form (printed and filled) | <a href="{{swimmingForm}}" target="_blank">download</a></li>
-        </ul>
-        <br>
+        <div id="intro">
+          <h3>{{campDetails[0]}}</h3>       <br>
 
-        <h4>{{campDetails[1]}}</h4>
-        <br>
+          <h3>For check-in, please have the following prepared:</h3>
+          <ul>
+            <li>Matriculation Card</li>
+            <li>Indemnity Form |&nbsp; <a href="{{indemnityForm}}" target="_blank"><i class="fa fa-download download"></i>
+  </a></li>
+            <li>Swimming Form |&nbsp;  <a href="{{swimmingForm}}" target="_blank"><i class="fa fa-download download"></i>
+  </a></li>
+          </ul>
+          <br>
+          <h3>{{campDetails[1]}}</h3>
+          <br>
+          <h3>
+            Note: Please have the forms ready in hard copy.
+          </h3>
+          <br>
+        </div>
 
         <!-- Section 2 -->
-        <h3 class="title">Camp List</h3>
+        <h2 class="title"><i class="fa fa-suitcase icon"></i>
+<br><br>Camp List</h2>
+<br>
         <div class="row">
           <div class="col-md-4">
-            <h4>Basics</h4>
+            <h3><i class="fa fa-star"></i> Basics</h3>
             <ul ng-repeat="basic in basics">
               <li>{{basic}}</li>
             </ul>
             <br>
           </div>
           <div class="col-md-4">
-            <h4>Essentials</h4>
+            <h3><i class="fa fa-star-half-o"></i> Essentials</h3>
             <ul ng-repeat="essential in essentials">
               <li>{{essential}}</li>
             </ul>
             <br>
           </div>
           <div class="col-md-4">
-            <h4>Optionals</h4>
+            <h3><i class="fa fa-star-o"></i>
+ Optionals</h3>
             <ul ng-repeat="optional in optionals">
               <li>{{optional}}</li>
             </ul>
@@ -42,14 +53,15 @@
         </div>
 
         <!-- Section 3 -->
-        <h3 class="title">FAQs</h3>
+        <h3 class="title"><i class="fa fa-question-circle icon"></i>
+<br><br>FAQs</h3>
         <ul ng-repeat="(qn, ans) in faq">
-          <br>
           <li>{{qn}}</li>
           <br>
           <p class="ans">
             {{ans}}
           </p>
+          <br>
         </ul>
         <br>
         <p class="ans">

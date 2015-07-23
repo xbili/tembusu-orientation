@@ -3,7 +3,7 @@
   <div class="row">
     <i id="backBtn" ng-click="goBack()" class="fa fa-chevron-left"></i>
     <div class="col-md-6" id="headImg">
-      <img src="{{ogLogoCollection[currentIndex]}}" class="img-responsive" alt="" />
+      <img src="{{imgLink}}" class="img-responsive" alt="" />
     </div>
     <div class="col-md-6" id="ogContent">
       <p id="ogHeader">{{currentName}}</p>
@@ -20,16 +20,18 @@
           {{desc}}
         </div>
         <br>
-
+<!--
         <p id="ogl">ogls</p>
         <div class="row ogl">
           <ul>
             <li id="headOGL">{{currentOGInfo["headOGL"]}}</li>
           </ul>
-          <ul ng-repeat="ogl in ogls">
+          <ul ng-repeat="ogl in ogls track by $index">
             <li>{{ogl}}</li>
           </ul>
-        </div>
+        </div> -->
+
+
       </div>
     </div>
   </div>

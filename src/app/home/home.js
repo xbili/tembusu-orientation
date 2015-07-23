@@ -32,7 +32,7 @@ angular.module( 'ngVn.home', [
   $scope.proceed = function(){
     // $scope.slide = 'slide-left';
     // $location.url('/info');
-    $('.home').fadeOut(600, function(){$state.go('updates');});
+    $('.home').fadeOut(500, function(){$state.go('updates');});
 
   };
 });

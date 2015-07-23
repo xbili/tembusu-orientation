@@ -1,8 +1,18 @@
 #subview{
+  position: fixed;
   background-color: rgb(34, 34, 34);
-}
-#headImg{
+  height: 100%;
+
   @media only screen
+  and (min-device-width : 320px)
+  and (max-device-width : 568px) {
+    position: static;
+  }
+}
+
+#headImg{
+transform: translateY(-10%);
+@media only screen
 and (min-device-width : 320px)
 and (max-device-width : 568px) {
   display: none;

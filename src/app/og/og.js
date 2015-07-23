@@ -44,12 +44,12 @@ angular.module( 'ngVn.og', [
 /**
 * And of course we define a controller for our route.
 */
-.controller( 'OGCtrl', function OGController( $scope, $rootScope, $http, $state ) {
-  
-  $('.og').fadeIn(600);
-  $(document).ready(function () {
-      window.scrollTo(0,0);
-  });
+.controller( 'OGCtrl', function OGController( $scope, $http, $state, $localStorage ) {
+
+  $('.og').fadeIn(500);
+  // $(document).ready(function () {
+  //     window.scrollTo(0,0);
+  // });
   // JS Variables
   imgPrefixPath = "assets/img/ogLogos/";
   imgFormat = ".jpeg";
@@ -92,16 +92,21 @@ angular.module( 'ngVn.og', [
   //Load OG Info
   $http.get('assets/data/ogSubView/ogSubView.json').
     then(function(res){
-      $scope.ogInfo = res.data;
+      $localStorage.ogInfo = res.data;
   });
 
-  //To track index of image clicked
-  $rootScope.currentIndex = null;
-  $scope.currentName = null;
 
   $scope.setIndex = function(val){
-    $rootScope.currentIndex = val;
-    $scope.currentName = imgNameCollection[val];
-    $('.og').fadeOut(600, function(){$state.go('og.ogSubView');});
+    //Save for Data Persistance
+    $localStorage.currentIndex = val;
+    $localStorage.currentName = imgNameCollection[$localStorage.currentIndex];
+    $localStorage.currentOGInfo = $localStorage.ogInfo[$localStorage.currentName];
+
+    $localStorage.quote = "\"" + $localStorage.currentOGInfo["quote"] + "\"";
+    $localStorage.by = "- " + $localStorage.currentOGInfo["by"];
+    $localStorage.desc = $localStorage.currentOGInfo["desc"];
+    $localStorage.ogls = $localStorage.currentOGInfo["ogls"];
+
+    $('.og').fadeOut(500, function(){$state.go('og.ogSubView');});
   };
 });
