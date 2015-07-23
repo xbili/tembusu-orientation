@@ -8,7 +8,8 @@ angular.module( 'ngVn', [
   'ngVn.info',
   'ngAnimate',
   'ui.router',
-  'ngSanitize'
+  'ngSanitize',
+  'ngStorage'
 ])
 
 .config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider, $stateProvider){
