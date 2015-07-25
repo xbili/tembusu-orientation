@@ -11,8 +11,8 @@
                 <h2>{{ mainTeam.committee }}</h2>
                 <p>{{ mainTeam.description }}</p>
             </div>
-            <ul class="text-center">
-                <li ng-repeat="member in mainTeam.members">{{ member.name }} - {{ member.title }}</li>
+            <ul>
+                <li class="text-center" ng-repeat="member in mainTeam.members">{{ member.name }} - {{ member.title }}</li>
             </ul>
         </div>
 
