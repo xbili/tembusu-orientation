@@ -1,7 +1,14 @@
 @font-face {
     font-family: 'Lucida Blackletter';
-    src: url('assets/fonts/lucida-blackletter/Aro.woff') format('woff');
+    src: url(fonts/lucida-blackletter/Aro.woff) format('woff');
 }
+
+@font-face {
+    font-family: 'Charlemagne Std Bold';
+    src: url(fonts/charlemagne-std-bold.otf) format('otf');
+}
+
+@import url(http://fonts.googleapis.com/css?family=Karla);
 
 .updates {
   background-image: url(img/shared/vn-background.jpg);
@@ -16,7 +23,13 @@
     font-size: 70px;
     font-weight: 700;
   }
+  .vn-update-box h2 {
+      font-family: 'Charlemagne Std Bold';
+      font-size: 45px;
+      font-weight: 500;
+  }
   .vn-update-box p {
+      font-family: 'Karla', sans-serif;
       white-space: pre-wrap;
   }
   .vn-update-img {
