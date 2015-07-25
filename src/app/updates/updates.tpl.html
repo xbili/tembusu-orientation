@@ -7,10 +7,11 @@
 
     <div class="row">
         <article class="col-md-12 left-padding-1 right-padding-1 bot-margin-1" ng-repeat="update in updates">
-            <div class="vn-update-box all-padding-1 clearfix">
-                <img class="img-responsive vn-update-img pull-left right-margin-1" src="/assets/img/about/moazzam_profile.jpg" alt="Moazzam" />
-                <h2>{{ update.title }}</h2>
-                <p>{{ update.date }}</p>
+            <div class="vn-update-box all-padding-1 clearfix" ng-if="update.is_live">
+                <header class="row">
+                    <h2>{{ update.title }}</h2>
+                </header>
+                <img class="img-responsive vn-update-img pull-left right-margin-3 bot-margin-3" src="{{ update.img_url }}" alt="{{ update.img_alt }}" />
                 <p ng-bind-html="update.content"></p>
             </div>
         </article>
