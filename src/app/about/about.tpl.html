@@ -17,20 +17,21 @@
         </div>
 
         <div class="row">
+            <div class="col-md-12 bot-margin-1 all-padding-1">
+                <h2 class="text-center">{{ finComm.committee }}</h2>
+                <p class="text-center">{{ finComm.description }}</p>
+            </div>
+        </div>
+
+        <div class="row">
             <div class="vn-sub-comm col-md-6 all-padding-1" ng-repeat="comm in subComm">
                 <h2 class="text-center">{{ comm.committee }}</h2>
                 <p>{{ comm.description }}</p>
                 <ul class="text-center">
-                    <li ng-repeat="member in comm.members">{{ member }}</li>
+                    <li class="text-center" ng-class="comm.twoRows" ng-repeat="member in comm.members">{{ member }}</li>
                 </ul>
             </div>
-       </div>
+        </div>
 
-       <div class="row">
-           <div class="col-md-12 bot-margin-1 all-padding-1">
-               <h2 class="text-center">{{ finComm.committee }}</h2>
-               <p class="text-center">{{ finComm.description }}</p>
-           </div>
-       </div>
     </div>
 </div>
