@@ -8,6 +8,7 @@ angular.module( 'ngVn.updates', [
         .then(function(res) {
             $scope.updates = res.data;
             $scope.updates.forEach(function(update) {
+                update.title = update.title.toUpperCase();
                 update.content = $sce.trustAsHtml(update.content);
             });
         });
