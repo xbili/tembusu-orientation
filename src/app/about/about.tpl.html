@@ -1,4 +1,4 @@
-<div class="about">
+<div class="about left-padding-1 right-padding-1">
     <div class="container">
         <header class="row">
             <div class="col-md-12 text-center">
@@ -11,26 +11,31 @@
                 <h2>{{ mainTeam.committee }}</h2>
                 <p>{{ mainTeam.description }}</p>
             </div>
-            <ul class="text-center">
-                <li ng-repeat="member in mainTeam.members">{{ member.name }} - {{ member.title }}</li>
-            </ul>
+            <div class="row text-center">
+                <div class="col-xs-12 all-padding-1" ng-repeat="member in mainTeam.members">
+                    {{ member.name }} - {{ member.title }}
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 bot-margin-1 all-padding-1">
+                <h2 class="text-center">{{ finComm.committee }}</h2>
+                <p class="text-center">{{ finComm.description }}</p>
+            </div>
         </div>
 
         <div class="row">
             <div class="vn-sub-comm col-md-6 all-padding-1" ng-repeat="comm in subComm">
                 <h2 class="text-center">{{ comm.committee }}</h2>
                 <p>{{ comm.description }}</p>
-                <ul class="text-center">
-                    <li ng-repeat="member in comm.members">{{ member }}</li>
-                </ul>
+                <div class="row text-center">
+                    <div ng-class="comm.rows" class="col-xs-12 all-padding-1" ng-repeat="member in comm.members">
+                        {{ member }}
+                    </div>
+                </div>
             </div>
-       </div>
+        </div>
 
-       <div class="row">
-           <div class="col-md-12 bot-margin-1 all-padding-1">
-               <h2 class="text-center">{{ finComm.committee }}</h2>
-               <p class="text-center">{{ finComm.description }}</p>
-           </div>
-       </div>
     </div>
 </div>

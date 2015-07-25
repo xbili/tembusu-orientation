@@ -101,10 +101,10 @@ angular.module( 'ngVn.og', [
     $localStorage.currentIndex = val;
     $localStorage.currentName = imgNameCollection[$localStorage.currentIndex];
     $localStorage.currentOGInfo = $localStorage.ogInfo[$localStorage.currentName];
-
     $localStorage.quote = "\"" + $localStorage.currentOGInfo["quote"] + "\"";
     $localStorage.by = "- " + $localStorage.currentOGInfo["by"];
     $localStorage.desc = $localStorage.currentOGInfo["desc"];
+    $localStorage.headOGL = $localStorage.currentOGInfo["headOGL"];
     $localStorage.ogls = $localStorage.currentOGInfo["ogls"];
 
     $('.og').fadeOut(500, function(){$state.go('og.ogSubView');});

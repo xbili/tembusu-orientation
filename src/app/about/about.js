@@ -10,6 +10,13 @@ angular.module( 'ngVn.about', [
             $scope.mainTeam = res.data[0];
             $scope.subComm = res.data.slice(1, -1);
             $scope.finComm = res.data.slice(-1)[0];
+
+            $scope.subComm.forEach(function(comm) {
+                comm.rows = 'col-md-12';
+                if (comm.members.length > 7) {
+                    comm.rows = 'col-md-6';
+                }
+            });
         });
 })
 

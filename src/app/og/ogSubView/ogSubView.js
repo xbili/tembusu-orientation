@@ -44,6 +44,7 @@ angular.module( 'ngVn.og.ogSubView', [
   $scope.quote = $localStorage.quote;
   $scope.by = $localStorage.by;
   $scope.desc = $localStorage.desc;
+  $scope.headOGL = $localStorage.headOGL;
   $scope.ogls = $localStorage.ogls;
   // alert($scope.ogls);
 
