@@ -12,9 +12,9 @@ angular.module( 'ngVn.about', [
             $scope.finComm = res.data.slice(-1)[0];
 
             $scope.subComm.forEach(function(comm) {
-                comm.twoRows = '';
+                comm.rows = 'col-md-12';
                 if (comm.members.length > 7) {
-                    comm.twoRows = 'vn-two-rows';
+                    comm.rows = 'col-md-6';
                 }
             });
         });
