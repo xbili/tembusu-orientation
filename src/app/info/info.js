@@ -60,7 +60,7 @@ angular.module( 'ngVn.info', [
     "Slippers",
     "Shoes",
     "Socks", 
-    "Bed sheets (super single) or Sleeping bag",
+    "Bed sheets (single) or Sleeping bag",
     "Phone charger", 
     "Toiletries",
     "Toothbrush + Toothpaste" 
