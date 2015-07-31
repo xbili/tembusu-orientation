@@ -11,8 +11,12 @@
                 <header class="row">
                     <h2>{{ update.title }}</h2>
                 </header>
-                <img class="img-responsive vn-update-img pull-left right-margin-3 bot-margin-3" src="{{ update.img_url }}" alt="{{ update.img_alt }}" />
+                <img class="img-responsive vn-update-img pull-left" src="{{ update.img_url }}" alt="{{ update.img_alt }}" />
                 <p ng-bind-html="update.content"></p>
+                <div class="text-center" ng-show="{{ update.hasAttachment }}">
+                    <h3>Downloads</h3>
+                    <a ng-repeat="attachment in update.attachments" class="vn-downloads text-center" href="{{ attachment.attachments.url }}">{{ attachment.name }}</a>
+                </div>
             </div>
         </article>
     </div>
