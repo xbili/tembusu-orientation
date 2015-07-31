@@ -1,28 +1,66 @@
 .updates {
-  background-image: url(img/shared/vn-background.jpg);
-  -webkit-background-size: 100% auto;
-  -moz-background-size: 100% auto;
-  -ms-background-size: 100% auto;
-  -o-background-size: 100% auto;
-  background-size: 100% auto;
+    background-image: url(img/shared/vn-background.jpg);
+    -webkit-background-size: 100% auto;
+    -moz-background-size: 100% auto;
+    -ms-background-size: 100% auto;
+    -o-background-size: 100% auto;
+    background-size: 100% auto;
 
-  header h1 {
-    font-family: 'Lucida Blackletter';
-    font-size: 70px;
-    font-weight: 700;
-  }
-  .vn-update-box h2 {
-      font-family: 'Charlemagne Std Bold';
-      font-size: 45px;
-      font-weight: 500;
-  }
-  .vn-update-box p {
-      font-family: 'Karla', sans-serif;
-      white-space: pre-wrap;
-  }
-  .vn-update-img {
-    max-height: 33%;
-    max-width: 33%;
-  }
+    header h1 {
+        font-family: 'Lucida Blackletter';
+        font-size: 35px;
+        font-weight: 700;
+
+        @media (min-width: @screen-lg-min) {
+            font-family: 'Lucida Blackletter';
+            font-size: 70px;
+            font-weight: 500;
+        }
+    }
+    .vn-update-box h2 {
+        text-align: center;
+        font-family: 'Charlemagne Std Bold';
+        font-size: 20px;
+        font-weight: 500;
+
+        @media (min-width: @screen-lg-min) {
+            font-family: 'Charlemagne Std Bold';
+            font-size: 45px;
+            font-weight: 500;
+        }
+    }
+    .vn-update-box p {
+        font-family: 'Karla', sans-serif;
+        white-space: pre-wrap;
+    }
+    .vn-update-img {
+        text-align: center;
+        margin-left: 0;
+        margin-right: 0;
+        max-height: 100%;
+        max-width: 100%;
+
+        @media (min-width: @screen-lg-min) {
+            margin: 10px;
+            text-align: default;
+            max-height: 33%;
+            max-width: 33%;
+        }
+    }
+    a {
+        color: black;
+        &:hover {
+            color: gray;
+            transition: color 0.25s ease-in;
+            -webkit-transition: color 0.25s ease-in;
+            -moz-transition: color 0.25s ease-in;
+            -o-transition: color 0.25s ease-in;
+            -ms-transition: color 0.25s ease-in;
+            transition: color 0.25s ease-in;
+        }
+    }
+    .vn-downloads {
+        display: inline-block;
+    }
 }
 
