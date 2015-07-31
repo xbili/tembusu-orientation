@@ -10,6 +10,12 @@ angular.module( 'ngVn.updates', [
             $scope.updates.forEach(function(update) {
                 update.title = update.title.toUpperCase();
                 update.content = $sce.trustAsHtml(update.content);
+
+                if (update.attachments.length === 0) {
+                    update.hasAttachment = false;
+                } else {
+                    update.hasAttachment = true;
+                }
             });
         });
 });
