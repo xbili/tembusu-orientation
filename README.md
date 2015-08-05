@@ -49,5 +49,5 @@ All changes should be submitted as a pull request into `development`. The naming
 
 (Shall be updated soon in the Wiki, because code quality is important)
 
-Feel free to drop me an email at [mailto:xubili93@gmail.com]() if you have any questions!
+Feel free to drop me an email at [xubili93@gmail.com](mailto:xubili93@gmail.com) if you have any questions!
 
