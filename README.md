@@ -2,15 +2,15 @@
 
 ## Why this was created
 
-Since orientation is an annual event, I thought it'd be good to have a system of deploying and building the website from scratch for each year. So voila! Presenting to you the **Tembusu Orientation** repository.
+Since orientation is an annual event, I thought it'd be good to have a system of developing the website, instead of building from scratch for each year. So voila! The **Tembusu Orientation** repository was born.
 
 ## What more is there to be done for this project?
 
-There's TONS of improvements to be made for this project. If you would want to get a list of them, refer to the GitHub issue list. Since this project is Open Source, feel free to raise any issues you've encountered, or suggest any improvements that you feel is good!
+There's TONS of improvements to be made for this project. If you would want to get a list of them, refer to the GitHub issue list. Feel free to raise any issues you've encountered, or suggest any improvements that you feel is good!
 
 Here's are two meat-ish projects that could be further worked on:
 
-1. CRUD API to interact with a database for the updates and posts
+1. API to interact with a database for the updates and posts
 2. Travis CI for deployment
 
 ## Getting Started
